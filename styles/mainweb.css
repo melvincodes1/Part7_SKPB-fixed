@@ -1,0 +1,55 @@
+/* STYLE INI BUAT TENTANG SKPB.HTML + WEB.HTML */
+
+/* #abcd:hover{
+    color:#013880;
+}
+
+#abcd{
+    color:black
+    #ffbd07; orange
+    #013880; biru
+
+} */
+
+.titlehead a{
+    color:white !important;
+    text-decoration: none;
+  }
+  
+.box-news .titlehead:hover{
+    background-color:#ffbd07 !important;
+    font-weight: bold;
+  }
+
+.box-news .titlehead a:hover{
+    color:#013880 !important;
+  }
+
+#BoxDalem{
+  padding-left: 20px !important;
+  padding-bottom: 10px !important;
+}
+
+#Judul{
+  font-weight: bold;
+  margin-bottom: 15px !important;
+  /* padding-bottom: 0px; */
+}
+
+#Judul:hover{
+  cursor: pointer;
+  color: #013880 !important;
+}
+
+#ListMateri1{
+  padding-top: 0px !important;
+}
+
+.btn-help a:hover{
+  font-weight: bold;
+
+}
+
+.link-text .sub-menu a:hover{
+  font-weight: bold;
+}
