@@ -21,11 +21,11 @@
   --text-color:#000;
   --bg-color:#fff;
   --first-color:#69B7D9;
-  --second-color:#EBEBEB; /*warna dalem*/
+  --second-color:#F9BE08; /*warna dalem*/
   /* --third-color:#ffffff ;warna dalem, ketika hover */
 
   --primary-color: #013880 ; /*warna nav luar*/
-  --secondary-color: #F8F8F8; /*warna dalem*/
+  --secondary-color: #f6ce58; /*warna dalem*/
   --tertiary-color: #DFDFD9;
   /* --primary-color-dark: #0088cc; */
   --secondary-color-dark: #4C3D3D;
@@ -235,7 +235,7 @@ main p{
 
 #toggle-btn:hover{
   background-color: var(--primary-color);
-  fill:#FFC410;
+  fill:#ffbf00;
   transform: scale(1.07);
 }
 
@@ -353,14 +353,14 @@ main p{
 }
 
 #sidebar-btn .logo a:hover{
-  color:#0088cc ;
+  color: #e2b93b;
   font-size:1.02em;
 }
 
 /* TOMBOL KEMBALI */
 #Back{
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 80px;
   border:1px solid #000;
   border-radius: 5px;
   width:100px;
@@ -374,8 +374,12 @@ main p{
 
 #Back:hover{
   background-color: #0088cc ;
-  color:white !important;
+  color:#ffffff !important;
   /* font-size: 1.1em; */
   /* padding-right: 25px; */
 }
 
+.hint{
+  border-color: #000;
+  background-color: lightskyblue;
+}
