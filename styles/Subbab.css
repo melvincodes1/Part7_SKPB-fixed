@@ -252,7 +252,7 @@ main p{
 .dfn-header {
   background-color: var(--text-color);/* #5cc6c6; */
   color: var(--bg-color);
-  font-weight: bold;
+  font-weight: normal !important;
   /* font-size: ; */
   padding: 4px 10px; 
   border: 2px solid var(--text-color); 
@@ -420,8 +420,8 @@ h2 .judul-bab{
   .dfn-header {
     background-color: var(--text-color);
     color: white;
-    font-weight: bold;
-    font-size: large;
+    font-weight:normal !important;
+    /* font-size: 75% !important; */
     padding: 4px 10px; 
     border: 2px solid var(--text-color); 
     border-radius: 5px; 
