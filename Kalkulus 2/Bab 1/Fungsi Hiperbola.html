@@ -36,12 +36,13 @@
         background-position: center;
         z-index: -1;
       }
+
+      
     </style>
     
 </head>
 <body>
-
-    <!-- <header>RANGKUMAN MATERI BAB </header> -->
+  <!-- <header>RANGKUMAN MATERI BAB </header> -->
     <!-- MENU SIDEBAR -->
     <nav class="sidebar">
       <ol id="menu">
@@ -146,530 +147,431 @@
     </nav>
 
    <main class="content">
+      <h1 style="display: flex; justify-content: left; font-family:Verdana;"> <u>BAB 1 : FUNGSI TRANSENDEN</u></h1><br>
+      <h2 style="display: flex; justify-content: left; font-family:Arial;">1.3 Fungsi Hiperbolik</h2> <br>
 
     <div id="home">
-      <br>      
+      <h2 style="display: flex; justify-content: center;">A) Rangkuman Materi</h2> <br>
+        <p style="font-size: 118%;"><b>1.1 Definisi Fungsi Hiperbolik</b> </p>
     <div class="dfn-box definisi">
       <div class="dfn-header">
-        1.1 Bilangan Berpangkat
-      </div>
-      <div class="dfn-content">
-        <b>DEFINISI 1.1.1. :</b> jika n bilangan positif, maka        
-        
-        <p style="text-align: center;">\( a^n = \underbrace{a \cdot a \cdot a \cdots a}_{n\ \text{faktor}} \)</p>
-        <ol class="materi1">
-          <li>\( a^m \cdot a^n = a^{m+n} \)</li>
-          <li>\( \frac{a^m}{a^n} = a^{m-n} \)</li>
-          <li>\( (a^m)^n = a^{mn} \)</li>
-          <li>\( a^0 = 1 \)</li>
-          <li>\( a^{-n} = \frac{1}{a^n} \)</li>
-        </ol><br>
-        <b>DEFINISI 1.1.2.</b> jika r adalah bilangan rasional dengan \(r = \frac{p}{q} \),  \(r>0\), maka 
+        Definisi 1.1.1</div>
+      <div class="dfn-content"> 
+        Fungsi sinus hiperbolik dan cosinus hiperbolik, masing-masing dinotasikan dengan \(sinh\) dan \(cosh\), dan didefinisikan dengan        
+        <p style="text-align: center;">\( \sinh x= \frac{e^x-e^{-x}}{2} \) &nbsp; \(\cosh x = \frac{e^x+e^{-x}}{2}\)</p>
 
-        <ol class="materi1">
-          <li>\(a^r = a^{\frac{p}{q}} = \sqrt[q]{a^p} = \)</li>
-          <li>\(a^{\frac{-p}{q}} = \frac{1}{a^{\frac{p}{q}}} \)</li>
-        </ol>
       </div>
     </div>
-      <div class="dfn-box definisi">
-        <div class="dfn-header">
-        1.2 Fungsi Eksponensial
-      </div>
-      <br>
-  <div id="grafik" style="width:600px; height:400px;"></div>
-  <script > //INI PARABOLA 1.2
-    // Data domain 
-    const x = [];
-    for (let i = -5; i <= 5; i += 0.1) {
-      x.push(i);
-    }
+   <br>
+<p style="font-size: 118%;"><b>1.2 Kesamaan Hiperbolik</b> </p>
 
-    // Fungsi y = 2^x
-    const y1 = x.map(xi => Math.pow(2, xi));
+<div style="text-align: center;">
+<p>\(\cosh (-x)=\cosh x\)</p>
+<p>\(\sinh (-x)=-\cosh x\)</p>
+<p>\(\cosh^2 x - \sinh^2 x =1 \)</p>
+<p>\(\tanh^2 x + sech^2 x =1 \)</p>
+<p>\(\coth^2 x - csch^2 x =1 \)</p>
+<p>\(\cosh x + \sinh x =e^x \)</p>
+<p>\(\cosh x - \sinh x =e^{-x} \)</p>
+<p>\(2\sinh x \cosh x =\sinh 2x \)</p>
+<p>\(\cosh^2 x + \sinh^2 x =\cosh 2x \)</p>
+<p>\(\sinh^2 x + 1 =\cosh 2x \)</p>
+<p>\(\cosh^2 x - 1 =\cosh 2x \)</p>
+<p>\(\sinh (x+y)=\sinh x \cosh y + \cosh x \sinh y\)</p>
+<p>\(\sinh(x-y)=\sinh x \cosh y - \cosh x \sinh y\)</p>
+<p>\(\cosh (x+y)=\cosh x \cosh y + \sinh x \sinh y\)</p>
+<p>\(\cosh(x-y)=\cosh x \cosh y - \sinh x \sinh y\)</p>
+</div><br>
 
-    // Fungsi y = 1/2^x = (2^x)^(-1)
-    const y2 = x.map(xi => 1 / Math.pow(2, xi));
-
-    const trace1 = {
-      x: x,
-      y: y1,
-      mode: 'lines',
-      name: 'y = 2^x, a > 1',
-      line: { color: 'blue' }
-    };
-
-    const trace2 = {
-      x: x,
-      y: y2,
-      mode: 'lines',
-      name: 'y = 1/2^x, 0 < a < 1',
-      line: { color: 'red' }
-    };
-
-    const layout = {
-      xaxis: {
-        title: 'x',
-        zeroline: true
-      },
-      yaxis: {
-        title: 'y',
-        zeroline: true
-      },
-      showlegend: true
-    };
-
-    Plotly.newPlot('grafik', [trace1, trace2], layout);
-  </script><br>
-          <p style="text-align: center;">Gambar 1.1 Grafik Fungsi Eksponensial</p>
-          </div>
-    <div class="dfn-box definisi">
-      <div class="dfn-header">
-          1.3 Fungsi Eksponensial Natural 
-      </div>
-      <div class="dfn-content">
-          <ol class="materi1">
-            <li>\(\lim_{x \to +\infty} (1 + \frac{1}{x})^x = e\)</li>
-            <li>\(\lim_{x \to -\infty} (1 + \frac{1}{x})^x = e\)</li>
-          </ol>
-    </div>
-    </div>
-
-    <div class="dfn-box definisi">
-      <div class="dfn-header"> 
-        1.4 Fungsi Logaritma
-      </div>
-      <div class="dfn-content">
-          <p style="text-align: center;">\( {}^{a}\log_{b}x \) </p>
-          dengan \(a>0,\) \(a \ne 1\) dan \(x>0\) (<b>Dibaca:</b> logaritma berbasis a dari x).
-      </div>
-    </div>
-
-    <div class="dfn-box teorema">
-      <div class="dfn-header">
-          Teorema 1.4.1
-      </div>
-      <div class="materi1">
-        <ol>
-          <li>\( {}^{a}\log_{1} = 0\)</li>
-          <li>\( {}^{a}\log_{a} = 1 \)</li>
-          <li>\( {}^{a}\log_{bc} = {}^{a}\log_{b} + {}^{a}\log_{b} \)</li>
-          <li>\( {}^{a}\log_{ \frac{b}{c}} = {}^{a}\log_{b} - {}^{a}\log_{b} \)</li>
-          <li>\( {}^{a}\log_{b^r} = r{}^{a}\log_{b} \)</li>
-          <li>\( {}^{a}\log_{ \frac{1}{c}} = -{}^{a}\log_{c}\) </li>
-        </ol>
-      </div>
-    </div>
-  
-    <div class="dfn-box teorema"> 
+<p style="font-size: 118%;"><b>1.3 Rumus Turunan Fungsi Hiperbolik </b> </p>
+    <ol class="materi1">
+<div style="text-align: center;">
+<p>\(\frac{d}{dx}(\sinh u) = \cosh u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\cosh u) = \sinh u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\tanh u) = sech^2 u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\coth u) = -csch^2 u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(sech u) = -sech u \tanh u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(csch u) = -csch u \coth u \frac{du}{dx}\)</p>
+</div> <br>
+    <p style="font-size: 118%;"><b>1.4 Rumus Integral Fungsi Hiperbolik </b> </p> <br>
+<div style="text-align: center;">
+  \(\int \sinh u \, du = \cosh u + C\) <br>
+  \(\int \cosh u \, du = \sinh u + C\) <br>
+  \(\int \tanh u \, du = \ln |\cosh u| + C\) <br>
+  \(\int \coth u \, du = \ln |\sinh u| + C\) <br>
+  \(\int sech^2 u \, du = \tanh u + C\) <br>
+  \(\int csch^2 u \, du = -\coth u + C\) <br>
+  \(\int sech u \tanh u \, du = -sech u + C\) <br>
+  \(\int csch u \coth u \, du = -csch u + C\) <br>
+    \)
+  </div>    
  
-      <div class="dfn-header"> Teorema 1.4.2
-      </div>
-      <div class="dfn-content" style="display:flex;justify-content: center;">
-        \({}^{a}\log_{x} = \frac{{}^{b}\log_{x}}{{}^{b}\log_{x}}\)
-      </div>
-    </div>
 
-    <div class="dfn-box definisi">
-      <div class="dfn-header">
-          1.5 Fungsi Logaritma Natural 
-      </div>
-      <div class="dfn-content">
-          <b>DEFINISI 1.5.1:</b> Untuk \(a>0\) dan \(a\ne1\), fungsi logaritma berbasis a didefinisikan dengan rumus <br>
-          <p style="display: flex;justify-content: center;">\({}^{a}\log_{x} = \frac{ln(x)}{ln(a)}\)</p>
-
-    </div>
-  </div>
-  <div class="dfn-box teorema">   
-        <div class="dfn-header">
-              Teorema 1.5.2
-            </div>
-        <div class="dfn-content">
-          <p>untuk sebarang bilangan positif \(b, c\) dan sebarang bilangan rasional \(r,\) berlaku </p> 
-         <ol class="materi1">
-            <li>\(ln(bc) = ln(b) + ln(c)\)</li>
-            <li>\(ln (\frac{b}{c}) = ln(b) - ln(c)\)</li>
-            <li>\(ln(b)^r\)</li>
-            <li>\(ln (\frac{1}{c}) = -ln(c) \)</li>
-            </ol>
-      </div>
-</div>
-
-<div class="dfn-box definisi">
-  <b>DEFINISI 1.5.3.</b> Jika x adalah bilangan real dan a adalah bilangan real positif, maka fungsi \(f(x)=a^x\) didefinisikan dengan rumus
-
-  <p style="display: flex; justify-content: center;">\(a^x =e^{x ln (a)} \)</p>
-  dan disebut <b>fungsi eksponensial berbasis a</b>
-</div>
-
-<div class="dfn-box teorema">   
-        <div class="dfn-header">
-              Teorema 1.5.4
-            </div>
-        <div class="dfn-content">
-          <p>untuk sebarang bilangan positif \(a\) dan sebarang bilangan real \(x\) berlaku </p> 
-          <p style="display: flex;justify-content: center;">\(ln a^x = x ln a\)</p>
-      </div>
-</div>
-
-<div class="dfn-box definisi">
-      <div class="dfn-header">
-          1.6 Grafik dari Fungsi Logaritma dan Eksponensial 
-      </div>
-</div>
-
-<div class="dfn-box teorema">   
-        <div class="dfn-header">
-              Teorema 1.6.1
-            </div>
-        <div class="dfn-content">
-          <p>Untuk \(a>0\) dan \(a\ne1,\) fungsi \(f(x)=a^x\) dan \(g(x)={}^alog{x}\) saling invers 
-      </div>
-
-  </div>
-<div class="dfn-box teorema">     
-  <div class="dfn-header">
-              Teorema 1.6.2
-            </div>
-        <div class="dfn-content">
-          <p>Fungsi \(lnx\) adalah naik dan oleh karena itu satu-satu pada \((0,+\infty)\)
-      </div>
-</div>
-<div class="dfn-box teorema">   
-<div class="dfn-header">
-              Teorema 1.6.3
-            </div>
-        <div class="materi1">
-          <ol>
-            <li>\(\lim_{x \to +\infty} lnx = +\infty\)</li>
-            <li>\(\lim_{x \to 0^+} lnx = -\infty\)</li>
-          </ol>
-      </div>
-</div>
-<div class="dfn-box teorema">     
-      <div class="dfn-header">
-              Teorema 1.6.4
-            </div>
-        <div class="materi1">
-          <ol>
-            <li>Domain dari \(lnx\) adalah \((0,+\infty)\)</li>
-            <li>Range dari \(lnx\) adalah \((-\infty,+\infty)\)</li>
-          </ol>
-      </div>
-</div>
-
-<div class="dfn-box teorema">     
-      <div class="dfn-header">
-              Teorema 1.6.5
-            </div>
-        <div class="materi1">
-          <ol>
-            <li>Domain dari \(e^x = \) range dari \((-\infty,+\infty)\)</li>
-            <li>Range dari \(e^x=\) domain dari \(lnx = (0,+\infty)\)</li>
-            <li>\(ln e^x \) untuk \(-\infty &lt x&lt+\infty\)</li>
-            <li>\(e^{ln x}\) untuk \(x &gt 0\)</li>
-          </ol>
-          <br>
-      <h1 style="color: blue;">ini gambar 2 & 3</h1>
-      <br>
-<!-- <script>
-    const x = [];
-    const y_exp = [];
-    const y_log = [];
-    const y_diag = [];
-
-    const a = 2;
-
-    for (let i = -2; i <= 4; i += 0.1) {
-      x.push(i);
-      y_exp.push(Math.pow(a, i));
-      y_diag.push(i);
-    }
-
-    const x_log = [];
-    for (let i = 0.1; i <= 4; i += 0.1) {
-      x_log.push(i);
-      y_log.push(Math.log(i) / Math.log(a)); // log_a x
-    }
-
-    const traceExp = {
-      x: x,
-      y: y_exp,
-      mode: 'lines',
-      name: 'y = a^x',
-      line: { color: 'blue' }
-    };
-
-    const traceLog = {
-      x: x_log,
-      y: y_log,
-      mode: 'lines',
-      name: 'y = logₐ(x)',
-      line: { color: 'red' }
-    };
-
-    const traceDiag = {
-      x: x,
-      y: y_diag,
-      mode: 'lines',
-      name: 'y = x',
-      line: { color: 'gray', dash: 'dot' },
-      showlegend: false
-    };
-
-    const layout = {
-      title: 'Grafik y = a^x dan y = logₐ(x), a > 1',
-      xaxis: { title: 'x', zeroline: true },
-      yaxis: { title: 'y', zeroline: true },
-      showlegend: true
-    };
-
-    Plotly.newPlot('plot', [traceExp, traceLog, traceDiag], layout);
-  </script>   -->
-      </div>
-</div>
-
-<div class="dfn-box definisi">     
-      <div class="dfn-header">
-             1.7 Turunan dan Integral Fungsi Logaritma
-            </div>
-        Jika \(u(x) \gt 0,\) dan fungsi \(u\) dapat diturunkan di \(x,\) maka
-        <p style="display: flex;justify-content: center;">\(\frac{d}{dx} [{}^alogx] = \frac{1}{xlna} \frac{du}{dx}  \) dan  \(  \frac{d}{dx}[ln u]=\frac{1}{x}\frac{du}{dx}\)</p>
- </div>
-<div class="dfn-content">
-  <b>DEFINISI 1.7.1.</b> Fungsi Logaritma natural didefinisikan dengan rumus <br>
-  <p style="display: flex;justify-content: center;">\(\ln x = \int_1^x \frac{1}{t} \,dt, x>0\)</p>
-</div>
-
-<div class="dfn-box definisi">     
-      <div class="dfn-header">
-             1.8 Turunan Pangkat Real X
-            </div>
-</div>
-
-<div class="dfn-box teorema">     
-      <div class="dfn-header">
-             Teorema 1.8.1.
-            </div>
-            <p>Untuk sebarang bilangan real \(r\) fungsi \(x^r\) dapat diturunkan pada \((0,+\infty)\) dan turunannya adalah</p><br>
-            <p style="display: flex; justify-content: center;">\(\frac{d}{dx}[x^r]= rx^{r-1}\)</p>
-</div>
-
-<div class="dfn-box definisi">     
-      <div class="dfn-header">
-             1.9 Turunan dan Fungsi Eksponensial
-            </div>
-</div>
-
-<div class="dfn-box teorema">     
-      <div class="dfn-header">
-             Teorema 1.9.1.
-            </div>
-<ol class="materi1">
-  <li>Fungsi \(e^x\) dapat diturunkan pada \((-\infty,+\infty\), dan turunannya adalah</li>
-  <br><p style="display: flex; justify-content: center;">\(\frac{d}{dx}[e^x]=e^x\)</p>
-  <li>Fungsi \(a^x\) dapat diturunkan pada \(-\infty, +\infty) dan turunannya adalah</li>
-  <br><p style="display: flex; justify-content: center;">\(\frac{d}{dx}[a^x]=a{}^xlna\)</p>
-</ol>
-Jika \(u\) fungsi \(x\) yang terdefinisi, maka
-<p style="display: flex; justify-content: center;">\(\frac{d}{dx}[e^x]=e^x\frac{du}{dx} \) dan \( \frac{d}{dx}[a^x]=a{}^ln a\frac{du}{dx}\)</p>
-Rumus integral yang bekaitan dengan turunan di atas adalah <br>
-<p style="display: flex; justify-content: center;">\(\int a^u\,du = \frac{a^u}{lna} +C  \) dan \( \int e^u\,du = e^u + C\)</p>
-</div>
-
-<div class="dfn-box teorema">     
-      <div class="dfn-header">
-             Teorema 1.9.2.
-      </div>
-      <ol class="materi1">
-        <li>\(\lim_{x \to 0} (1+x)^{\frac{1}{x}}\)=e\)</li>
-        <li>\(\lim_{x \to +\infty} (1+\frac{1}{x})^x=e\)</li>
-        <li>\(\lim_{x \to -\infty} (1+\frac{1}{x})^x=e\)</li>
-      </ol>
-</div>
-
-<div class="dfn-box definisi">     
-      <div class="dfn-header">
-             1.10 Grafik yang Memlibatkan Fungsi Eksponensial dan Logaritma
-            </div>
-
- <style>
+<p style="font-size: 118%;"><b>1.5 Invers Fungsi Hiperbolik </b> </p>
+<style>
     table {
-      border-collapse: collapse;
       width: 100%;
-      font-size: 18px;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
-    td, th {
+    th, td {
       border: 1px solid black;
       padding: 8px;
-      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
     }
   </style>
+  <!-- Tambahkan MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
-
-<h2>Tabel Sifat Fungsi Eksponen dan Logaritma</h2>
-
-<table>
+<table> 
   <tr>
-    <th>Sifat \( e^x \)</th>
-    <th>Sifat \( \ln x \)</th>
+    <th>Fungsi</th>
+    <th>Domain</th>
+    <th>Range</th>
+    <th>Hubungan Dasar</th>
   </tr>
   <tr>
-    <td>\( e^x > 0 \) untuk semua \( x \)</td>
+    <td>\(\sinh^{-1} x\)</td>
+    <td>\((-\infty, +\infty)\)</td>
+    <td>\((-\infty, +\infty)\)</td>
     <td>
-      \( \ln x > 0 \) jika \( x > 1 \)<br>
-      \( \ln x < 0 \) jika \( 0 < x < 1 \)<br>
-      \( \ln x = 0 \) jika \( x = 1 \)
+      \(\sinh^{-1}(\sinh x) = x \text{ jika } -\infty < x < +\infty\) <br>
+      \(\sinh(\sinh^{-1} x) = x \text{ jika } -\infty < x < +\infty\)
     </td>
   </tr>
   <tr>
-    <td>\( e^x \) naik pada \( (-\infty, +\infty) \)</td>
-    <td>\( \ln x \) naik pada \( (0, +\infty) \)</td>
+    <td>\(\cosh^{-1} x\)</td>
+    <td>\([1, +\infty)\)</td>
+    <td>\([0, +\infty)\)</td>
+    <td>
+      \(\cosh^{-1}(\cosh x) = x \text{ jika } x \ge 0\) <br>
+      \(\cosh(\cosh^{-1} x) = x \text{ jika } x \ge 1\)
+    </td>
   </tr>
   <tr>
-    <td>grafik \( e^x \) cekung ke atas pada \( (-\infty, +\infty) \)</td>
-    <td>grafik \( \ln x \) cekung ke bawah pada \( (0, +\infty) \)</td>
+    <td>\(\tanh^{-1} x\)</td>
+    <td>\((-1, 1)\)</td>
+    <td>\((-\infty, +\infty)\)</td>
+    <td>
+      \(\tanh^{-1}(\tanh x) = x \text{ jika } -\infty < x < +\infty\) <br>
+      \(\tanh(\tanh^{-1} x) = x \text{ jika } -1 < x < 1\)
+    </td>
+  </tr>
+  <tr>
+    <td>\(\coth^{-1} x\)</td>
+    <td>\((-\infty, -1) \cup (1, +\infty)\)</td>
+    <td>\((-\infty, 0) \cup (0, +\infty)\)</td>
+    <td>
+      \(\coth^{-1}(\coth x) = x \text{ jika } x < 0 \text{ atau } x > 0\) <br>
+      \(\coth(\coth^{-1} x) = x \text{ jika } x < -1 \text{ atau } x > 1\)
+    </td>
+  </tr>
+  <tr>
+    <td>\(sech^{-1} x\)</td>
+    <td>\((0, 1]\)</td>
+    <td>\([0, +\infty)\)</td>
+    <td>
+      \(sech^{-1}(sech x) = x \text{ jika } x \ge 0\) <br>
+      \(sech(sech^{-1} x) = x \text{ jika } 0 < x \le 1\)
+    </td>
+  </tr>
+  <tr>
+    <td>\(csch^{-1} x\)</td>
+    <td>\((-\infty, 0) \cup (0, +\infty)\)</td>
+    <td>\((-\infty, 0) \cup (0, +\infty)\)</td>
+    <td>
+      \(csch^{-1}(csch x) = x \text{ jika } x < 0 \text{ atau } x > 0\) <br>
+      \(csch(csch^{-1} x) = x \text{ jika } x < 0 \text{ atau } x > 0\)
+    </td>
   </tr>
 </table>
 
- </div>
-
-<hr>
-<br>
-<h1>Contoh Soal 1.1</h1> <br><hr><br>
-
-1. <b>Soal Kuis</b><br>
-Dapatkan nilai \(x\) dari: \(ln(x+6) + ln(x-3) = ln5+ln2\)
-<br>
-<h4>Pembahasan</h4>
-        <div class="solution-step">
-          ingat bahwa \(ln(ab) = lna + lnb\), maka
-          <p style="display: flex; justify-content:center;">\(ln(x+6) +ln(x-3) = ln5 + ln2\)</p>
-          <p style="display: flex; justify-content:center;">\(ln(x+6)(x-3) = ln10\)</p>
-
-          sehingga \((x+6)(x-3)=10 -> x^2 +3x -28 = (x+7)(x-4)=0\). Jadi x yang memenuhi adalah \(7\) atau \(4\)
+    <div class="dfn-box teorema">
+      <div class="dfn-header" id="satulima">
+        Teorema 1.5.1</div>
+      <div class="dfn-content"> 
+        <p style="text-align: center;">\(y=\sinh^{-1}x \) ekuivalen dengan \(\sinh y = x\) untuk semua \(x,y\)</p>
+        <p style="text-align: center;">\(y=\cosh^{-1}x \) ekuivalen dengan \(\cosh y = x\) jika \(\begin{cases} x \ge 1 \\ y \ge 0. \end{cases}\)</p>
+        <p style="text-align: center;">\(y=\tanh^{-1}x \) ekuivalen dengan \(\tanh y = x\) jika \(\begin{cases} -1 < x < 1 \\ -\infty < y < +\infty. \end{cases}\)</p>
+        <p style="text-align: center;">\(y=\coth^{-1}x \) ekuivalen dengan \(\coth y = x\) jika \(\begin{cases} |x| > 1 \\ y &ne; 0 \end{cases}\)</p>
+        <p style="text-align: center;">\(y=sech^{-1}x \) ekuivalen dengan \(sech y = x\) jika \(\begin{cases} 0 < x \le 1 \\ y \ge 0. \end{cases}\)</p>
+        <p style="text-align: center;">\(y=csch^{-1}x \) ekuivalen dengan \(csch y = x\) jika \(\begin{cases} x &ne; 0 \\ y &ne; 0. \end{cases}\)</p>
 
       </div>
-<hr>
-2. <b>Soal ETS 2020</b><br>
-Dapatkan turunan dari  \(y=(1+x)^{\frac{1}{x}}\) 
+    </div> 
+    
+<p style="font-size: 118%;"><b>1.6 Bentuk Logaritma Fungsi Invers Hiperbolik</b> </p>
+    <div class="dfn-box teorema">
+      <div class="dfn-header">
+        Teorema 1.6.1</div>
+      <div class="dfn-content"> 
+        Hubungan berikut ini berlaku, dengan pembatasan pada \(x\) dalam <a href="#satulima">(1.5.1)</a>  <br>
+        <div style="text-align: center;">
+      <p>\(\sinh^{-1}x = \ln\left(x + \sqrt{x^2 + 1}\right)\)</p>
+      <p>\(\cosh^{-1}x = \ln\left(x + \sqrt{x^2 - 1}\right)\)</p>
+      <p>\(\tanh^{-1}x = \frac{1}{2} \ln\left(\frac{1 + x}{1 - x}\right)\)</p>
+      <p>\(\coth^{-1}x = \frac{1}{2} \ln\left(\frac{x + 1}{x - 1}\right)\)</p>
+      <p>\(sech^{-1}x = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right)\)</p>
+      <p>\(csch^{-1}x = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)\)</p>
+</div>
+
+      </div>
+    </div>
+   
+<p style="font-size: 118%;"><b>1.7 Rumus Turunan Fungsi Invers Hiperbolik</b> </p>
+    <div class="dfn-box teorema">
+      <div class="dfn-header" id="satutujuh">
+        Teorema 1.7.1</div>
+      <div class="dfn-content"> 
+        Hubungan berikut ini berlaku, dengan pembatasan pada \(x\) dalam <a href="#satulima">(1.5.1)</a>  <br>
+        <div style="text-align: center;">
+          <p>\(\frac{d}{dx}[\sinh^{-1}x] = \frac{1}{\sqrt{x^2 + 1}}\)</p>
+          <p>\(\frac{d}{dx}[\cosh^{-1}x] = \frac{1}{\sqrt{x^2 - 1}}\)</p>
+          <p>\(\frac{d}{dx}[\tanh^{-1}x] = \frac{1}{1 - x^2}\)</p>
+          <p>\(\frac{d}{dx}[\coth^{-1}x] = -\frac{1}{1 - x^2}\)</p>
+          <p>\(\frac{d}{dx}[sech^{-1}x] = -\frac{1}{x\sqrt{1 - x^2}}\)</p>
+          <p>\(\frac{d}{dx}[csch^{-1}x] = -\frac{1}{|x|\sqrt{1 + x^2}}\)</p>
+</div>
+          Rumus integrasi berdasarkan teorema <a href="#satutujuh">(1.7.1)</a>
+</div>
+</div>
+
+    <div class="dfn-box teorema">
+      <div class="dfn-header" id="satutujuh">
+        Teorema 1.7.2</div>
+      <div class="dfn-content"> 
+        <div style="text-align: center;">
+          <p>\(\int \frac{dx}{\sqrt{x^2 + 1}} = \sinh^{-1}x + C\)</p>
+          <p>\(\int \frac{dx}{\sqrt{x^2 - 1}} = \cosh^{-1}x + C,\) &nbsp; untuk \(u > 1\)</p>
+          <p>\(\int \frac{dx}{1 - x^2} = \tanh^{-1}x + C,\) &nbsp; untuk \(|u| < 1\)</p>
+          <p>\(\int \frac{dx}{1 - x^2} = -\coth^{-1}x + C,\) &nbsp; untuk \(|u| > 1\)</p>
+          <p>\(\int \frac{dx}{x\sqrt{1 - x^2}} = -sech^{-1}x + C\)</p>
+          <p>\(\int \frac{dx}{|x|\sqrt{1 + x^2}} = -csch^{-1}x + C\)</p>
+</div>
+
+
+
+      </div>
+    </div>
+
+</div>
+<br>
+<hr><br>
+
+<div id="homeContoh">
+<h2>B) Contoh Soal</h2> <br><hr><br>
+
+1. Dapatkan \(\frac{dy}{dx}\) dari <br>
+<p style="text-align: center;">\(y=\sinh (cos3x)\)</p>
+<br>
 <h4>Pembahasan</h4>
-<div class="solution-step">
-  <p style="display: flex;justify-content: center;">\(y=(1+x)^{\frac{1}{x}}\)</p>
-  <p style="display: flex;justify-content: center;">\(lny =ln(1+x)^{\frac{1}{x}}\)</p>
-  <p style="display: flex;justify-content: center;">\(lny=\frac{1}{x}ln(1+x)\)</p>
-  <p style="display: flex;justify-content: center;">\(\frac{d}{dx}[lny]=\frac{1}{y}[\frac{d}{dx}ln(1+x)]\)</p>
-  <p style="display: flex;justify-content: center;">\(\frac{dy}{dx}\frac{1}{y}=-\frac{1}{x^2}ln(1+x)+\frac{1}{1+x}\frac{1}{x}\)</p>
-  <p style="display: flex;justify-content: center;">\(\frac{dy}{dx}=(-\frac{1}{x^2}ln(1+x)+\frac{1}{1+x}\frac{1}{x})\)</p>
-  <p style="display: flex;justify-content: center;">\(\frac{dy}{dx}=(\frac{-(1+x)ln(1+x)+x}{x^2(1+x)})(1+x)^{\frac{1}{x}}\)</p>
-  <p style="display: flex;justify-content: center;">\(\frac{dy}{dx}=(-\frac{-(1+x)ln(1+x)+x}{x^2})(1+x)^{\frac{1-x}{x}}\)</p>
-</div><hr>
-3. Hitung \(\int \frac{dx}{xlnx}\) <br>
+Diketahui bahwa \(\frac {d}{dx}[\sinh u]= \cosh u \frac{du}{dx}\), sehingga <br>
+<p style="text-align: center;">\(\frac{dy}{dx}=\frac{d}{dx}[\sinh (cos3x)]\)</p>
+<p style="text-align: center;">\(= \cosh (cos3x) \frac{d}{dx}(cos3x)\)</p>
+<p style="text-align: center;">\(= \cosh (cos3x) (-3 \sin 3x)\)</p>
+<p style="text-align: center;">\(= -3 \sin 3x \cosh (cos3x))\)</p> <br>
+
+<hr><br>
+2. Dapatkan \(\frac{dy}{dx}\) dari <br>
+<p style="text-align: center;">\(y=\sinh^{-1} (\tan x)\)</p>
+<br> 
+<h4>Pembahasan</h4>
+Diketahui bahwa \(\frac {d}{dx}[\sinh^{-1} u]= \frac{1}{\sqrt{u^2 + 1}} \frac{du}{dx}\), sehingga <br>
+<p style="text-align: center;">\(\frac{dy}{dx}=\frac{d}{dx}[\sinh^{-1} (\tan x)]\)</p>
+<p style="text-align: center;">\(= \frac{1}{\sqrt{(\tan x)^2 + 1}} \frac{d}{dx}(\tan x)\)</p>
+<p style="text-align: center;">\(= \frac{1}{\sqrt{\sec^2 x}} \sec^2 x\)</p>
+<p style="text-align: center;">\(= \sec x\)</p><br>
+
+<hr><br>
+3. Hitung integral <br>
+<div style="text-align: center;"> \(\int \tanh 2x, dx\) </div>
+<br>
 <b>Pembahasan:</b><br>
-Misalkan \(u=lnx\), sehingga \(du = \frac{dx}{x}\)
-<p style="display: flex;justify-content: center; font-size:x-larger;">\(\int \frac{dx}{xlnx}=\int \frac{du}{u}\)</p>
-<p style="display: flex; justify-content: center;">=\(lnx\) + C</p>
-<p style="display: flex; justify-content: center;">=\(ln(lnx)\) + C</p>
+Misalkan \(u=sech 2x,\) sehingga \(du=-2 sech 2x \tanh 2x dx\) &hArr; \(\frac{du}{-2 sech 2x} = \frac{du}{-2u} = \tanh 2x dx\) <br>
+
+<p style="text-align:center;">\(\int \tanh 2x dx = \int \frac{du}{2u}\)</p>
+<p style="text-align:center;">\(=-\frac{1}{2} ln \(u + C\)\)</p>
+<p style="text-align:center;">\(-\frac{1}{2} \ln(sech 2x) + C\)</p> <hr><br>
+
+4. Hitung integral <br>
+<div style="text-align: center;">
+\(\frac{dx}{\sqrt{1-e^{2x}}}\) </div><br>
+<b>Pembahasan:</b><br>
+Misalkan \(u=e^x,\) sehingga \(du=e^xdx &hArr; dx=\frac{du}{e^x}=\frac{du}{u}\) <br>
+
+<p style="text-align:center;">\(\int \frac{dx}{\sqrt{1-e^{2x}}} = \int \frac{1}{\sqrt{1-u^2}} \frac{du}{u}\)</p>
+<p style="text-align:center;">\(= \int \frac{1}{u \sqrt{1-u^2}} \frac{du}{u}\)</p>
+<p style="text-align: center;">\(= -sech^{-1}|u| + C\)</p>
+<p style="text-align: center;">\(= -sech^{-1}|e^x| + C\)</p>
+
+</div>
+</div>
+
+
+
+  
 
 <br>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-<h1 style="display: flex; justify-content: center;">Latihan Soal 1.1</h1><br>
+<hr><br>
+<div id="homeSoal">
+<h2 style="display: flex; justify-content: center;">C) Latihan Soal</h2><br>
 <div class="content">
   <div class="home">
-1. <b>Soal ETS 2020</b>
-Tentukan \(x\) yang memenuhi \(e^{-2x}-3e^{-x}=-2\) <br>
-<details id="hint">
-  <summary>Hint:</summary>
-  Misalkan \(e^x=u\) 
-</details> 
+1. <b>Soal ETS 2024</b><br>
+Dapatkan turunan dari <br><div style="text-align: center;">
+\(f(x) = \frac{e^x+ \ln x}{\sinh 3x}\)
+</div> <br>
 
       <details class="solution">
         <summary>Pembahasan</summary>
         <div class="solution-step">
-          Misalkan \(u=e^{-x}\), sehingga
-          <p style="display: flex;justify-content: center;">\(e^{-2x}-3e{-x}=-2\)</p>
-          <p style="display: flex;justify-content: center;">\(u^2-3^u+2=0\)</p>
-          <p style="display: flex;justify-content: center;">\((u-1)(u-2)=0\)</p>
-          Diperoleh,
-          <p style="display: flex;justify-content: center;">\(u1=e{-x1}=1\)</p>
-          <p style="display: flex;justify-content: center;">\(lne{-x1}=ln1\)</p>
-          <p style="display: flex;justify-content: center ;">\(-x1=0\)</p>
-          <p style="display: flex;justify-content: center ;">\(x1=0\)</p>
-          <p style="display: flex;justify-content: center;">\(u2=e^{-x2}=2\)</p>
-          <p style="display: flex;justify-content: center;">\(lne{ex2}=ln2\)</p>
-          <p style="display: flex;justify-content: center ;">\(-x2=ln2\)</p>
-          <p style="display: flex;justify-content: center ;">\(x2=ln {\frac{1}{2}}\)</p>
-          Jadi x yang memenuhi adalah \(0\) dan \(ln \frac{1}{2}\)
+          Misalkan \(u=e^{x}+ \ln x\) dan \(v= \sinh 3x\), sehingga \(u'=e^x + \frac{1}{x} dan v'=3\cosh 3x\) <br>
+          Dengan rumus turunan fungsi pecahan, diperoleh
+          <p style="display: flex;justify-content: center;">\(f'(x)=\frac{u'v-uv'}{v^2}\)</p>
+          <p style="display: flex;justify-content: center;">\(=\frac{(e^x+\frac{1}{x})\sinh 3x- (e^x+ \ln x)3\cosh 3x}{\sinh^2 3x}\)</p>
+          <p style="display: flex;justify-content: center;">\(=\frac{e^x \sinh 3x+\frac{1}{x}\sinh 3x-3e^x\cosh 3x-3\ln x \cosh 3x}{\sinh^2 3x}\)</p>
+          Jadi, turunan dari fungsi tersebut adalah
+          <p style="display: flex;justify-content: center;">\(f'(x)=\frac{e^x \sinh 3x+\frac{1}{x}\sinh 3x-3e^x\cosh 3x-3\ln x \cosh 3x}{\sinh^2 3x}\)</p> 
+          <p style="text-align: center;">atau</p>
+          <p style="text-align: center;">\(= \frac{xe^x \sinh 3x + \sinh 3x - 3xe^x \cosh 3x - 3x \ln x cosh 3x}{x \sinh^2 3x} \)</p>
+
           
       </div>
       </details>
     </div>
-<br>
+<hr><br> <br>
 2. <b>Soal ETS 2021</b><br>
-Dapatkan penyelesaian dari persamaan \(ln(e^{-x}-1)=x\) <br>
+Dapatkan \(\frac{dy}{dx}\) dari  <br>
+<div style="text-align: center;">
+  \(y=\ln(\cosh^{-1}x)\)
+</div>
       <details class="solution">
         <summary>Pembahasan</summary>
-        <div class="solution-step">
-          <p style="display: flex; justify-content: center;">\(ln(e^{-x}-1=x\)</p>
-          <p style="display: flex; justify-content: center;">\(e{ln(e^{-x}-1)=e^x}\)</p>
-          <p style="display: flex; justify-content: center;">\(e^{-x}-1=e^x\)</p>
-          <p style="display: flex; justify-content: center;">e^{2x}+e^x-1=0</p><br>
-          Misalkan \(u=e^x\), sehingga
-          <p style="display: flex;justify-content: center;">e^{2x}+e^x-1=0</p>
-          <p style="display: flex;justify-content: center;">u^2+u-1</p>
-          Dengan rumus abc diperoleh
-          <p style="display: flex; justify-content: center;">\(u12= ]\frac {-1 &plusmn &radic;(1^2-4(1)(-1))}{2}\)</p>
-          <p style="display: flex; justify-content: center;">=\(\frac{-1 &plusmn &radic;(5)}{2}\)</p>
-          Karena \(u=e^x &gt 0\), akibatnya hanya \(u=e^x=\frac{-1 &plusmn &radic;(5)}{2}\)
+        <div class="solution-step" style="text-align: center;">
+          <p>\(\frac{dy}{dx}=\frac{d}{dx}[\ln(\cosh^{-1}x)]\)</p>
+          <p>=\(\frac{1}{\cosh^{-1}x}\frac{d}{dx}[\cosh^{-1}x]\)</p>
+           <p>=\(\frac{1}{\cosh^{-1}x}\cdot\frac{1}{\sqrt{x^2-1}}\)</p>
           
-      </div>
-      </details><br>
 
-3. <b>Soal ETS 2020</b>
-Dapatkan \(\frac{dy}{dx}\) dari fungsi \(y=ln(\frac{cos^2 x}{&radic;(2x-3x^2)})\) <br>
-<b>Hint:</b> \(\frac{dy}{dx}\) dari \(y=ln(u(x))\) adalah \(\frac{dy}{dx}=\frac{1}{u(x)}\frac{du}{dx}\)
-<br>
+      </div>
+      </details>
+      <hr><br> <br>
+
+3. <b>Soal kuis</b>
+Dapatkan bahwa <br> 
+<p style="text-align: center;">\(\tanh^{-1}x = \frac{1}{2} \ln (\frac{1+x}{1-x}); -1 < x < 1 \)</p><br>
+
 <details class="solution">
   <summary>Pembahasan:</summary>
   <div class="solution-step">
-    <p style="display: flex; justify-content: center;">\(\frac{dy}{dx}=\frac{d}{dx}[ln(\frac{cos^2x}{&radic;(2x-3x^2)})]\)</p>
-    <p style="display: flex; justify-content: center;">\(=\frac{a}{cos^2x}\frac{d}{dx}[\frac{cos^2x}{&radic;(2x-3x^2)}]\)</p>
-    <p style="display: flex; justify-content: center;">\(=\frac{&radic;(2x-3x^2)}{cos^2x}\frac{-2cosxsinx&radic;(2x-3x^2)-\frac{2-6x}{2&radic;(2x-3x^2)}cos^2x}{&radic;(2x-3x^2)}\)</p>
-    <p style="display: flex; justify-content: center;">\(=\frac{-2sinx(2x-3x^2)-(1-3x)cosx}{(2x-3x^2)cosx}\)</p>
-    <p style="display: flex; justify-content: center;">\(=\frac{-2tan(2x-3x^2)-1+3x}{(2x-3x^2)}\)</p>
+
+    Dapatkan \(y = tanh^{-1}x, \) sehingga \(x = tanh y\)
+    <div style="text-align: center;">
+\( x = \frac{\sinh y}{\cosh y} \)<br>
+\(= \frac{\frac{e^y - e^{-y}}{2}}{\frac{e^y+e^{-y}}{2}}\)<br>
+\(= \frac{e^y - e^{-y}}{e^y + e^{-y}}\) <br>
+\(= \frac{e^{2y} - 1}{e^{2y} + 1}\)<br><br>
+\(xe^{2y}+x = e^{2y}- 1 \)<br>
+\(e^{2y} - xe^{2y} = 1 + x\) <br>
+\(e^{2y}(1-x) = 1+x\) <br>
+\(e^{2y} = \frac{1+x}{1-x}\) <br>
+\(2y = \ln(\frac{1+x}{1-x})\) <br>
+\(y = \frac{1}{2} \ln(\frac{1+x}{1-x})\) <br>
+
+
+    </div>
   </div>
 
-</details><br>
+</details><hr><br> <br>
 
 
 
-4. <b>Soal ETS 2024</b>
-Hitung integral \int x2{x^2};dx <br>
-<b>Hint 1:</b> Substitusi u=x^2 <br>
-<b>Hint 2:</b> Gunakan sifat \(\int a^x; dx = \frac{a^x}{ln a}+ C\) <br>
+4. <b>Soal Kuis</b>
+Selesaikan \(\int e^{-x} \tanh(2-e^{-x});dx \)<br>
+<b>Hint 1:</b> Substitusi \(u=2-e^{-x}\) <br>
 <details class="solution">
   <summary>Pembahasan:</summary><br>
       <div class="solution-step">
-        Misalkan \(u=x^2\), sehingga \(du=2x dx\) &hArr; \( \frac{du}{2}x dx\) <br>
-            <p style="display: flex; justify-content: center;">\(\ \int x2x^2 ;dx = \int 2^u\frac{;du}{2} \)</p>
-            <p style="display: flex; justify-content: center;">\(=\ \frac{1}{2}int2^u ;du\)</p>
-            <p style="display: flex; justify-content: center;">\(= \frac{1}{2}\frac{2^u}{ln 2} +C\)</p>
-            <p style="display: flex; justify-content: center;">\(= \frac{2^{u-1}}{ln 2} + C\)</p>
-            <p style="display: flex; justify-content: center;">\(= \frac{2^{x^2-1}}{ln 2} + C\)</p>
+        Misalkan \(u=2-e{-x}\), sehingga \(du=e^{-x} dx\) 
+            <p style="display: flex; justify-content: center;">\(\int e^{-x} \tanh(2-e^{-x});dx = \int \tanh(u) du\)</p>
+        Misalkan \(a=sech u,\) sehingga \(da=-sech u \tanh u du\) &hArr; \(\frac{da}{-sech u} = \tanh u du\) <br>
+            <p style="display: flex; justify-content: center;">\(\int \tanh(u) du = \int \frac{da}{-a}\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln |a| + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln |sech u| + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln |sech(2-e^{-x})| + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln \left(\frac{1}{\sqrt{1-(2-e^{-x})^2}}\right) + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(1-(2-e^{-x})^2) + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(1-(4-4e^{-x}+e^{-2x})) + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(e^{-2x}-4e^{-x}+3) + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln((e^{-x}-3)(e^{-x}-1)) + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(e^{-x}-3) + \frac{1}{2} \ln(e^{-x}-1) + C\)</p>
+
       </div>
 </details>
     </div>
+<hr><br> <br>
+
+5. Hitung integral <br>
+<p style="text-align: center;">\(\int \frac{1}{\sqrt{9x^2-25}};dx \)</p><br>
+<b>Hint 1:</b> Substitusi \(x=5u\) <br>
+<details class="solution">
+  <summary>Pembahasan:</summary><br>
+      <div class="solution-step">
+        Misalkan \(x=5u,\) sehingga \(dx=5du\) <br>
+        <p style="display: flex; justify-content: center;">\(\int \frac{1}{\sqrt{9x^2-25}};dx = 5\int \frac{1}{\sqrt{9(5u)^2-25}};du\)</p>
+        <p style="display: flex; justify-content: center;">\(= 5\int \frac{1}{\sqrt{225u^2-25}};du\)</p>
+        <p style="display: flex; justify-content: center;">\(= 5\int \frac{1}{\sqrt{25(9u^2-1)}};du\)</p>
+        <p style="display: flex; justify-content: center;">\(= \int \frac{1}{\sqrt{9u^2-1}};du\)</p> <br>
+
+
+        Misalkan \(u=\frac{1}{3} \sec v,\) sehingga \(du=\frac{1}{3} \sec v \tan v dv\) <br>
+        <p style="display: flex; justify-content: center;">\(= \int \frac{1}{\sqrt{9(\frac{1}{3} \sec v)^2-1}} \cdot \frac{1}{3} \sec v \tan v dv\)</p>
+        <p style="display: flex; justify-content: center;">\(= \int \frac{1}{\sqrt{\sec^2 v-1}} \cdot \frac{1}{3} \sec v \tan v dv\)</p>
+        <p style="display: flex; justify-content: center;">\(= \int \frac{1}{\tan v} \cdot \frac{1}{3} \sec v \tan v dv\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \int \sec v dv\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |\sec v + \tan v| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |\sec(\frac{1}{3} \sec^{-1}(3u)) + \tan(\frac{1}{3} \sec^{-1}(3u))| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |\sec(\sec^{-1}(3u)) + \tan(\sec^{-1}(3u))| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |3u + \sqrt{9u^2-1}| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |3(\frac{x}{5}) + \sqrt{9(\frac{x}{5})^2-1}| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |3(\frac{x}{5}) + \sqrt{\frac{9x^2}{25}-1}| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |3(\frac{x}{5}) + \sqrt{\frac{9x^2-25}{25}}| + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{1}{3} \ln |3x + \sqrt{9x^2-25}| - \frac{1}{3} \ln 5 + C\)</p>
+
+
+      </div>
+</details>
+<hr><br> <br>
+6. Hitung integral <br>
+<p style="text-align: center;">\(\int \sqrt{\tanh x}sech^2x;dx \)</p><br>
+<b>Hint 1:</b> Substitusi \(u = \tanh x\) <br>
+<details class="solution">
+  <summary>Pembahasan:</summary><br>
+      <div class="solution-step">
+        Misalkan \(u= \tanh x,\) sehingga \(du= sech^2x ;dx\) <br>
+        <p style="display: flex; justify-content: center;">\(\int \sqrt{\tanh x}sech^2x;dx = \int \sqrt{u} du\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{2}{3} u^{\frac{3}{2}} + C\)</p>
+        <p style="display: flex; justify-content: center;">\(= \frac{2}{3} (\tanh x)^{\frac{3}{2}} + C\)</p>
+        </div>
+
+      </details>
+<hr><br>
+
+    </div>
+
 
 
     </div>
 
     </div>
-</div>  
+</div> </div> 
   
     
     <p id="AnakKP">&copy; Copyright 2025 | KP Mahasiswa Matematika 2022</p>
