@@ -208,21 +208,6 @@
  
 
 <p style="font-size: 118%;"><b>1.5 Invers Fungsi Hiperbolik </b> </p>
-<style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
   <!-- Tambahkan MathJax -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
@@ -292,6 +277,7 @@
     </td>
   </tr>
 </table>
+<p style="text-align: center;"><b>Tabel 1.5.1</b> Hubungan Dasar Fungsi Invers Hiperbolik</p>
 
     <div class="dfn-box teorema">
       <div class="dfn-header" id="satulima">
@@ -339,10 +325,11 @@
           <p>\(\frac{d}{dx}[sech^{-1}x] = -\frac{1}{x\sqrt{1 - x^2}}\)</p>
           <p>\(\frac{d}{dx}[csch^{-1}x] = -\frac{1}{|x|\sqrt{1 + x^2}}\)</p>
 </div>
-          Rumus integrasi berdasarkan teorema <a href="#satutujuh">(1.7.1)</a>
-</div>
+        
 </div>
 
+</div>
+  Rumus integrasi berdasarkan teorema <a href="#satutujuh">(1.7.1)</a>
     <div class="dfn-box teorema">
       <div class="dfn-header" id="satutujuh">
         Teorema 1.7.2</div>
@@ -362,8 +349,6 @@
     </div>
 
 </div>
-<br>
-<hr><br>
 
 <div id="homeContoh">
 <h2>B) Contoh Soal</h2> <br><hr><br>
@@ -371,7 +356,7 @@
 1. Dapatkan \(\frac{dy}{dx}\) dari <br>
 <p style="text-align: center;">\(y=\sinh (cos3x)\)</p>
 <br>
-<h4>Pembahasan</h4>
+<h4>Jawab:</h4>
 Diketahui bahwa \(\frac {d}{dx}[\sinh u]= \cosh u \frac{du}{dx}\), sehingga <br>
 <p style="text-align: center;">\(\frac{dy}{dx}=\frac{d}{dx}[\sinh (cos3x)]\)</p>
 <p style="text-align: center;">\(= \cosh (cos3x) \frac{d}{dx}(cos3x)\)</p>
@@ -382,7 +367,7 @@ Diketahui bahwa \(\frac {d}{dx}[\sinh u]= \cosh u \frac{du}{dx}\), sehingga <br>
 2. Dapatkan \(\frac{dy}{dx}\) dari <br>
 <p style="text-align: center;">\(y=\sinh^{-1} (\tan x)\)</p>
 <br> 
-<h4>Pembahasan</h4>
+<h4>Jawab:</h4>
 Diketahui bahwa \(\frac {d}{dx}[\sinh^{-1} u]= \frac{1}{\sqrt{u^2 + 1}} \frac{du}{dx}\), sehingga <br>
 <p style="text-align: center;">\(\frac{dy}{dx}=\frac{d}{dx}[\sinh^{-1} (\tan x)]\)</p>
 <p style="text-align: center;">\(= \frac{1}{\sqrt{(\tan x)^2 + 1}} \frac{d}{dx}(\tan x)\)</p>
@@ -393,7 +378,7 @@ Diketahui bahwa \(\frac {d}{dx}[\sinh^{-1} u]= \frac{1}{\sqrt{u^2 + 1}} \frac{du
 3. Hitung integral <br>
 <div style="text-align: center;"> \(\int \tanh 2x, dx\) </div>
 <br>
-<b>Pembahasan:</b><br>
+<b>Jawab::</b><br>
 Misalkan \(u=sech 2x,\) sehingga \(du=-2 sech 2x \tanh 2x dx\) &hArr; \(\frac{du}{-2 sech 2x} = \frac{du}{-2u} = \tanh 2x dx\) <br>
 
 <p style="text-align:center;">\(\int \tanh 2x dx = \int \frac{du}{2u}\)</p>
@@ -403,7 +388,7 @@ Misalkan \(u=sech 2x,\) sehingga \(du=-2 sech 2x \tanh 2x dx\) &hArr; \(\frac{du
 4. Hitung integral <br>
 <div style="text-align: center;">
 \(\frac{dx}{\sqrt{1-e^{2x}}}\) </div><br>
-<b>Pembahasan:</b><br>
+<b>Jawab::</b><br>
 Misalkan \(u=e^x,\) sehingga \(du=e^xdx &hArr; dx=\frac{du}{e^x}=\frac{du}{u}\) <br>
 
 <p style="text-align:center;">\(\int \frac{dx}{\sqrt{1-e^{2x}}} = \int \frac{1}{\sqrt{1-u^2}} \frac{du}{u}\)</p>
@@ -415,11 +400,6 @@ Misalkan \(u=e^x,\) sehingga \(du=e^xdx &hArr; dx=\frac{du}{e^x}=\frac{du}{u}\) 
 </div>
 
 
-
-  
-
-<br>
-<hr><br>
 <div id="homeSoal">
 <h2 style="display: flex; justify-content: center;">C) Latihan Soal</h2><br>
 <div class="content">
