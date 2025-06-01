@@ -154,7 +154,7 @@
       <h2 style="display: flex; justify-content: center;">A) Rangkuman Materi</h2> <br>
         <p style="font-size: 118%;"><b>1.1 Fungsi Naik dan Turun yang Mempunyai Invers</b> </p>
     <div class="dfn-box teorema">
-      <div class="dfn-header">
+      <div class="dfn-header" id="teorema1.1.1">
         Teorema 1.1.1</div>
       <div class="dfn-content"> 
         Jika domain \(f\) adalah suatu selang dan jika \(f\) fungsi naik atau turun pada selan itu, maka \(f\) satu-satu dan karenanya  mempunyai invers. 
@@ -209,9 +209,19 @@
        </div>
     </div>
 <p style="font-size: 118%;"><b>1.5 Interpretasi Geometri dari \(\sin^{-1} x\)</b> </p>
-<table border="1" cellpadding="10" cellspacing="0"> <!--INI TABEL ---->
+<style>
+  .tabeltrig {
+    overflow: auto;
+    max-width: 100%;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>
+<table border="1" cellpadding="10" cellspacing="0" class="tabeltrig">
   <thead>
-    <tr>
+    <tr style="background-color: rgb(209, 209, 209);">
       <th>Fungsi</th>
       <th>Domain</th>
       <th>Range</th>
@@ -263,9 +273,9 @@
 <p style="text-align: center;"><b>Tabel 1.5.1</b> Interpretasi Geometri dari Fungsi Invers Trigonometri</p>
 <br>
 <p style="font-size: 118%;"><b>1.6 Invers Cotangen dan Cosecan</b> </p>
-<table border="1" cellpadding="10" cellspacing="0"> 
+<table border="1" cellpadding="10" cellspacing="0" class="tabeltrig"> 
   <thead>
-    <tr>
+    <tr style="background-color: rgb(209, 209, 209);">
       <th>Fungsi</th>
       <th>Domain</th>
       <th>Range</th>
@@ -311,7 +321,8 @@
     <p style="display: flex; justify-content: center;">\(\csc^{-1} x + \sec^{-1} x = \frac{\pi}{2}\)</p>
 <p style="font-size: 118%;"><b>1.8 Penyederhanaan Ekspresi yang Memuat Fungsi Invers Trigonometri</b> </p>
 Misalkan \(\sin y = x,\) sehingga <br><br>
-<img src="../gambar/gambar_1.2.1.svg" alt="the triangle" style="width: 100%;">
+<div style="display: flex; justify-content: center;">
+<img src="../gambar/gambar_1.2.1.svg" alt="the triangle" style="width: 75%;"></div>
 <p style="text-align: center;"><b>Gambar 1.8.1</b> Interpretasi Segitiga Invers Trigonometri</p>
 
 
@@ -389,7 +400,7 @@ Diketahui bahwa;
         <summary>Pembahasan</summary>
         <div class="solution-step">
           Ya, fungsi \(f(x)= 5-x^2, x \leq 1\) mempunyai invers karena fungsi ini adalah fungsi kuadrat yang terbuka ke bawah dan memiliki domain terbatas yaitu \(x \leq 1\). Fungsi ini monoton menurun pada interval tersebut, sehingga memenuhi syarat untuk memiliki invers. <br> <br>
-          Berdasarkan teorema 1.1.1, fungsi ini adalah fungsi satu-satu pada domainnya, sehingga memiliki invers. <br>
+          Berdasarkan <a href="#teorema1.1.1">Teorema 1.1.1</a>, fungsi ini adalah fungsi satu-satu pada domainnya, sehingga memiliki invers. <br>
           
       </div>
       </details>
@@ -400,7 +411,8 @@ Diberikan \(\theta=\sin^{-1}\left(-\frac{\sqrt{3}}{2} \right)\). Tentukan nilai 
       <details class="solution">
         <summary>Pembahasan</summary>
         Akan digunakan metode segitiga siku-siku untuk menentukan nilai-nilai trigonometri tersebut. <br>
-        <img src="../gambar/gambar_1.2.2.svg" alt="triangle" style="width: 45%;">
+        <div style="display: flex; justify-content: center;">
+        <img src="../gambar/gambar_1.2.2.svg" alt="triangle" style="width: 25%;"></div>
 
         <div class="solution-step">
           Berdasarkan definisi fungsi invers sinus, kita tahu bahwa \(\sin \theta = -\frac{\sqrt{3}}{2}\). Dengan menggunakan segitiga siku-siku, kita dapat menentukan nilai-nilai trigonometri lainnya. <br>
@@ -436,7 +448,7 @@ Diberikan \(\theta=\sin^{-1}\left(-\frac{\sqrt{3}}{2} \right)\). Tentukan nilai 
 
 3. <b>Soal ETS 2022</b>
 Dapatkan \(\frac{dy}{dx}\) dari<br> 
-<p style="text-align: center;">\y = tan^{-1}(xe^{-3x}) \)</p><br>
+<p style="text-align: center;">\(y = \tan^{-1}(xe^{-3x}) \)</p><br>
 <details class="solution">
   <summary>Pembahasan:</summary><br>
       <div class="solution-step">

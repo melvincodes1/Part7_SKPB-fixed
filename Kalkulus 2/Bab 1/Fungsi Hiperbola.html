@@ -157,7 +157,7 @@
       <div class="dfn-header">
         Definisi 1.1.1</div>
       <div class="dfn-content"> 
-        Fungsi sinus hiperbolik dan cosinus hiperbolik, masing-masing dinotasikan dengan \(sinh\) dan \(cosh\), dan didefinisikan dengan        
+        Fungsi sinus hiperbolik dan cosinus hiperbolik, masing-masing dinotasikan dengan \(\sinh\) dan \(\cosh\), dan didefinisikan dengan        
         <p style="text-align: center;">\( \sinh x= \frac{e^x-e^{-x}}{2} \) &nbsp; \(\cosh x = \frac{e^x+e^{-x}}{2}\)</p>
 
       </div>
@@ -169,8 +169,8 @@
 <p>\(\cosh (-x)=\cosh x\)</p>
 <p>\(\sinh (-x)=-\cosh x\)</p>
 <p>\(\cosh^2 x - \sinh^2 x =1 \)</p>
-<p>\(\tanh^2 x + sech^2 x =1 \)</p>
-<p>\(\coth^2 x - csch^2 x =1 \)</p>
+<p>\(\tanh^2 x + \mathrm{sech}^2 {x} =1 \)</p>
+<p>\(\coth^2 x - \mathrm{csch}^2 {x} =1 \)</p>
 <p>\(\cosh x + \sinh x =e^x \)</p>
 <p>\(\cosh x - \sinh x =e^{-x} \)</p>
 <p>\(2\sinh x \cosh x =\sinh 2x \)</p>
@@ -188,22 +188,22 @@
 <div style="text-align: center;">
 <p>\(\frac{d}{dx}(\sinh u) = \cosh u \frac{du}{dx}\)</p>
 <p>\(\frac{d}{dx}(\cosh u) = \sinh u \frac{du}{dx}\)</p>
-<p>\(\frac{d}{dx}(\tanh u) = sech^2 u \frac{du}{dx}\)</p>
-<p>\(\frac{d}{dx}(\coth u) = -csch^2 u \frac{du}{dx}\)</p>
-<p>\(\frac{d}{dx}(sech u) = -sech u \tanh u \frac{du}{dx}\)</p>
-<p>\(\frac{d}{dx}(csch u) = -csch u \coth u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\tanh u) = \mathrm{sech}^2 {u} \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\coth u) = -\mathrm{csch}^2 {u} \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\mathrm{sech} {u}) = -\mathrm{sech} {u} \tanh u \frac{du}{dx}\)</p>
+<p>\(\frac{d}{dx}(\mathrm{csch} {u}) = -\mathrm{csch} {u} \coth u \frac{du}{dx}\)</p>
 </div> <br>
     <p style="font-size: 118%;"><b>1.4 Rumus Integral Fungsi Hiperbolik </b> </p> <br>
 <div style="text-align: center;">
-  \(\int \sinh u \, du = \cosh u + C\) <br>
-  \(\int \cosh u \, du = \sinh u + C\) <br>
-  \(\int \tanh u \, du = \ln |\cosh u| + C\) <br>
-  \(\int \coth u \, du = \ln |\sinh u| + C\) <br>
-  \(\int sech^2 u \, du = \tanh u + C\) <br>
-  \(\int csch^2 u \, du = -\coth u + C\) <br>
-  \(\int sech u \tanh u \, du = -sech u + C\) <br>
-  \(\int csch u \coth u \, du = -csch u + C\) <br>
-    \)
+  \(\int \sinh u \, du = \cosh u + C\) <br> <br>
+  \(\int \cosh u \, du = \sinh u + C\) <br> <br>
+  \(\int \tanh u \, du = \ln |\cosh u| + C\) <br> <br>
+  \(\int \coth u \, du = \ln |\sinh u| + C\) <br> <br>
+  \(\int \mathrm{sech}^2 {u} \, du = \tanh u + C\) <br> <br>
+  \(\int \mathrm{csch}^2 {u} \, du = -\coth u + C\) <br> <br>
+  \(\int (\mathrm{sech} {u}\) \(\tanh u ) du = -\mathrm{sech} {u} + C\) <br> <br>
+  \(\int (\mathrm{csch} {u}\)  \(\mathrm{coth} {u}) du = -\mathrm{csch} {u} + C\) <br> <br>
+
   </div>    
  
 
@@ -216,7 +216,7 @@
 </head>
 <body>
 <table> 
-  <tr>
+  <tr style="background-color: rgb(209, 209, 209);">
     <th>Fungsi</th>
     <th>Domain</th>
     <th>Range</th>
@@ -259,21 +259,21 @@
     </td>
   </tr>
   <tr>
-    <td>\(sech^{-1} x\)</td>
+    <td>\(\mathrm{sech}^{-1} {x}\)</td>
     <td>\((0, 1]\)</td>
     <td>\([0, +\infty)\)</td>
     <td>
-      \(sech^{-1}(sech x) = x \text{ jika } x \ge 0\) <br>
-      \(sech(sech^{-1} x) = x \text{ jika } 0 < x \le 1\)
+      \(\mathrm{sech}^{-1}{\mathrm{(sech)} {x}} = x \text{ jika } x \ge 0\) <br>
+      \(\mathrm{sech}{\mathrm{(sech)}^{-1} {x}} = x \text{ jika } 0 < x \le 1\) <br>
     </td>
   </tr>
   <tr>
-    <td>\(csch^{-1} x\)</td>
+    <td>\(\mathrm{csch}^{-1} x\)</td>
     <td>\((-\infty, 0) \cup (0, +\infty)\)</td>
     <td>\((-\infty, 0) \cup (0, +\infty)\)</td>
     <td>
-      \(csch^{-1}(csch x) = x \text{ jika } x < 0 \text{ atau } x > 0\) <br>
-      \(csch(csch^{-1} x) = x \text{ jika } x < 0 \text{ atau } x > 0\)
+      \(\mathrm{csch}^{-1}(\mathrm{csch} {x}) = x \text{ jika } x < 0 \text{ atau } x > 0\) <br>
+      \(\mathrm{csch}(\mathrm{csch}^{-1} {x}) = x \text{ jika } x < 0 \text{ atau } x > 0\)
     </td>
   </tr>
 </table>
@@ -287,8 +287,8 @@
         <p style="text-align: center;">\(y=\cosh^{-1}x \) ekuivalen dengan \(\cosh y = x\) jika \(\begin{cases} x \ge 1 \\ y \ge 0. \end{cases}\)</p>
         <p style="text-align: center;">\(y=\tanh^{-1}x \) ekuivalen dengan \(\tanh y = x\) jika \(\begin{cases} -1 < x < 1 \\ -\infty < y < +\infty. \end{cases}\)</p>
         <p style="text-align: center;">\(y=\coth^{-1}x \) ekuivalen dengan \(\coth y = x\) jika \(\begin{cases} |x| > 1 \\ y &ne; 0 \end{cases}\)</p>
-        <p style="text-align: center;">\(y=sech^{-1}x \) ekuivalen dengan \(sech y = x\) jika \(\begin{cases} 0 < x \le 1 \\ y \ge 0. \end{cases}\)</p>
-        <p style="text-align: center;">\(y=csch^{-1}x \) ekuivalen dengan \(csch y = x\) jika \(\begin{cases} x &ne; 0 \\ y &ne; 0. \end{cases}\)</p>
+        <p style="text-align: center;">\(y=\mathrm{sech}^{-1}x \) ekuivalen dengan \(\mathrm{sech} {y} = x\) jika \(\begin{cases} 0 < x \le 1 \\ y \ge 0. \end{cases}\)</p>
+        <p style="text-align: center;">\(y=\mathrm{csch}^{-1}x \) ekuivalen dengan \(\mathrm{csch} {y} = x\) jika \(\begin{cases} x &ne; 0 \\ y &ne; 0. \end{cases}\)</p>
 
       </div>
     </div> 
@@ -304,8 +304,8 @@
       <p>\(\cosh^{-1}x = \ln\left(x + \sqrt{x^2 - 1}\right)\)</p>
       <p>\(\tanh^{-1}x = \frac{1}{2} \ln\left(\frac{1 + x}{1 - x}\right)\)</p>
       <p>\(\coth^{-1}x = \frac{1}{2} \ln\left(\frac{x + 1}{x - 1}\right)\)</p>
-      <p>\(sech^{-1}x = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right)\)</p>
-      <p>\(csch^{-1}x = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)\)</p>
+      <p>\(\mathrm{sech}^{-1}x = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right)\)</p>
+      <p>\(\mathrm{csch}^{-1}x = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)\)</p>
 </div>
 
       </div>
@@ -322,8 +322,8 @@
           <p>\(\frac{d}{dx}[\cosh^{-1}x] = \frac{1}{\sqrt{x^2 - 1}}\)</p>
           <p>\(\frac{d}{dx}[\tanh^{-1}x] = \frac{1}{1 - x^2}\)</p>
           <p>\(\frac{d}{dx}[\coth^{-1}x] = -\frac{1}{1 - x^2}\)</p>
-          <p>\(\frac{d}{dx}[sech^{-1}x] = -\frac{1}{x\sqrt{1 - x^2}}\)</p>
-          <p>\(\frac{d}{dx}[csch^{-1}x] = -\frac{1}{|x|\sqrt{1 + x^2}}\)</p>
+          <p>\(\frac{d}{dx}[\mathrm{sech}^{-1}x] = -\frac{1}{x\sqrt{1 - x^2}}\)</p>
+          <p>\(\frac{d}{dx}[\mathrm{csch}^{-1}x] = -\frac{1}{|x|\sqrt{1 + x^2}}\)</p>
 </div>
         
 </div>
@@ -339,8 +339,8 @@
           <p>\(\int \frac{dx}{\sqrt{x^2 - 1}} = \cosh^{-1}x + C,\) &nbsp; untuk \(u > 1\)</p>
           <p>\(\int \frac{dx}{1 - x^2} = \tanh^{-1}x + C,\) &nbsp; untuk \(|u| < 1\)</p>
           <p>\(\int \frac{dx}{1 - x^2} = -\coth^{-1}x + C,\) &nbsp; untuk \(|u| > 1\)</p>
-          <p>\(\int \frac{dx}{x\sqrt{1 - x^2}} = -sech^{-1}x + C\)</p>
-          <p>\(\int \frac{dx}{|x|\sqrt{1 + x^2}} = -csch^{-1}x + C\)</p>
+          <p>\(\int \frac{dx}{x\sqrt{1 - x^2}} = -\mathrm{sech}^{-1}x + C\)</p>
+          <p>\(\int \frac{dx}{|x|\sqrt{1 + x^2}} = -\mathrm{csch}^{-1}x + C\)</p>
 </div>
 
 
@@ -379,22 +379,22 @@ Diketahui bahwa \(\frac {d}{dx}[\sinh^{-1} u]= \frac{1}{\sqrt{u^2 + 1}} \frac{du
 <div style="text-align: center;"> \(\int \tanh 2x, dx\) </div>
 <br>
 <b>Jawab::</b><br>
-Misalkan \(u=sech 2x,\) sehingga \(du=-2 sech 2x \tanh 2x dx\) &hArr; \(\frac{du}{-2 sech 2x} = \frac{du}{-2u} = \tanh 2x dx\) <br>
+Misalkan \(u=sech 2x,\) sehingga \(du=-2 sech 2x \tanh 2x dx\) &hArr; \(\frac{du}{-2 sech 2x} = \frac{du}{-2u} = \tanh 2x dx\) <br> <br>
 
 <p style="text-align:center;">\(\int \tanh 2x dx = \int \frac{du}{2u}\)</p>
-<p style="text-align:center;">\(=-\frac{1}{2} ln \(u + C\)\)</p>
-<p style="text-align:center;">\(-\frac{1}{2} \ln(sech 2x) + C\)</p> <hr><br>
+<p style="text-align:center;">\(=-\frac{1}{2} ln u + C\)</p>
+<p style="text-align:center;">\(-\frac{1}{2} \ln(\mathrm{sech} 2x) + C\)</p> <hr><br>
 
 4. Hitung integral <br>
 <div style="text-align: center;">
 \(\frac{dx}{\sqrt{1-e^{2x}}}\) </div><br>
 <b>Jawab::</b><br>
-Misalkan \(u=e^x,\) sehingga \(du=e^xdx &hArr; dx=\frac{du}{e^x}=\frac{du}{u}\) <br>
+Misalkan \(u=e^x,\) sehingga \(du=e^xdx &hArr; dx=\frac{du}{e^x}=\frac{du}{u}\) <br> <br>
 
 <p style="text-align:center;">\(\int \frac{dx}{\sqrt{1-e^{2x}}} = \int \frac{1}{\sqrt{1-u^2}} \frac{du}{u}\)</p>
 <p style="text-align:center;">\(= \int \frac{1}{u \sqrt{1-u^2}} \frac{du}{u}\)</p>
-<p style="text-align: center;">\(= -sech^{-1}|u| + C\)</p>
-<p style="text-align: center;">\(= -sech^{-1}|e^x| + C\)</p>
+<p style="text-align: center;">\(= -\mathrm{sech}^{-1}|u| + C\)</p>
+<p style="text-align: center;">\(= -\mathrm{sech}^{-1}|e^x| + C\)</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Dapatkan bahwa <br>
   <summary>Pembahasan:</summary>
   <div class="solution-step">
 
-    Dapatkan \(y = tanh^{-1}x, \) sehingga \(x = tanh y\)
+    Dapatkan \(y = \tanh^{-1}x, \) sehingga \(x = \tanh y\)
     <div style="text-align: center;">
 \( x = \frac{\sinh y}{\cosh y} \)<br>
 \(= \frac{\frac{e^y - e^{-y}}{2}}{\frac{e^y+e^{-y}}{2}}\)<br>
@@ -481,11 +481,11 @@ Selesaikan \(\int e^{-x} \tanh(2-e^{-x});dx \)<br>
       <div class="solution-step">
         Misalkan \(u=2-e{-x}\), sehingga \(du=e^{-x} dx\) 
             <p style="display: flex; justify-content: center;">\(\int e^{-x} \tanh(2-e^{-x});dx = \int \tanh(u) du\)</p>
-        Misalkan \(a=sech u,\) sehingga \(da=-sech u \tanh u du\) &hArr; \(\frac{da}{-sech u} = \tanh u du\) <br>
+        Misalkan \(a=\mathrm{sech} {u},\) sehingga \(da=-\mathrm{sech} {u} \tanh u du\) &hArr; \(\frac{da}{-\mathrm{sech}{u}} = \tanh u du\) <br> <br>
             <p style="display: flex; justify-content: center;">\(\int \tanh(u) du = \int \frac{da}{-a}\)</p>
             <p style="display: flex; justify-content: center;">\(= -\ln |a| + C\)</p>
-            <p style="display: flex; justify-content: center;">\(= -\ln |sech u| + C\)</p>
-            <p style="display: flex; justify-content: center;">\(= -\ln |sech(2-e^{-x})| + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln |\mathrm{sech} {u}| + C\)</p>
+            <p style="display: flex; justify-content: center;">\(= -\ln |\mathrm{sech}(2-e^{-x})| + C\)</p>
             <p style="display: flex; justify-content: center;">\(= -\ln \left(\frac{1}{\sqrt{1-(2-e^{-x})^2}}\right) + C\)</p>
             <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(1-(2-e^{-x})^2) + C\)</p>
             <p style="display: flex; justify-content: center;">\(= \frac{1}{2} \ln(1-(4-4e^{-x}+e^{-2x})) + C\)</p>
@@ -530,13 +530,13 @@ Selesaikan \(\int e^{-x} \tanh(2-e^{-x});dx \)<br>
 </details>
 <hr><br> <br>
 6. Hitung integral <br>
-<p style="text-align: center;">\(\int \sqrt{\tanh x}sech^2x;dx \)</p><br>
+<p style="text-align: center;">\(\int \sqrt{\tanh x} &nbsp;\mathrm{sech}^2{x};dx \)</p><br>
 <b>Hint 1:</b> Substitusi \(u = \tanh x\) <br>
 <details class="solution">
   <summary>Pembahasan:</summary><br>
       <div class="solution-step">
-        Misalkan \(u= \tanh x,\) sehingga \(du= sech^2x ;dx\) <br>
-        <p style="display: flex; justify-content: center;">\(\int \sqrt{\tanh x}sech^2x;dx = \int \sqrt{u} du\)</p>
+        Misalkan \(u= \tanh x,\) sehingga \(du= \mathrm{sech}^2x ;dx\) <br>
+        <p style="display: flex; justify-content: center;">\(\int \sqrt{\tanh x}\mathrm{sech}^2x;dx = \int \sqrt{u} du\)</p>
         <p style="display: flex; justify-content: center;">\(= \frac{2}{3} u^{\frac{3}{2}} + C\)</p>
         <p style="display: flex; justify-content: center;">\(= \frac{2}{3} (\tanh x)^{\frac{3}{2}} + C\)</p>
         </div>
