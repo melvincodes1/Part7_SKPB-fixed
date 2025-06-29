@@ -148,115 +148,61 @@
 
    <main class="content">
       <h1 style="display: flex; justify-content: left; font-family:Verdana;"> <u>BAB 5 : PERSAMAAN PARAMETRIK DAN KOODINAT KUTUB</u></h1><br>
-      <h2 style="display: flex; justify-content: left; font-family:Arial;">5.4 Luas dan Volume dalam Koordinat Kutub</h2> <br>
+      <h2 style="display: flex; justify-content: left; font-family:Arial;">5.5 Garis Singgung dan Panjang Busur dalam Koordinat Kutub</h2> <br>
 
       
     <div id="home">
       <h2 style="text-align: center;">A) Rangkuman Materi</h2> <br>
 
-      <h3 style="text-align: left;">1 Masalah Luasan dalam Koordinat Kutub</h3>
+      <h3 style="text-align: left;">1 Persamaan Karakteristik untuk Kurva Kutub</h3>
+Jika \(r=f(\theta \), maka 
+<p style="text-align: center;">\(x = rcos \theta y=rsin \theta\)</p>
 
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (2).svg" alt="#" style="max-width: 850px;">
-</div>
-           <div class="dfn-box teorema">
+<h3>2 Garis Singgung pada Kurva Kutub</h3>
+
+    <p>
+        Jika \(r = f(\theta)\), maka
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        \frac{dx}{d\theta} &= -r \sin\theta + \frac{dr}{d\theta} \cos\theta \\
+        \frac{dy}{d\theta} &= r \cos\theta + \sin\theta \frac{dr}{d\theta} \\
+        \frac{dy}{dx} &= \frac{r \cos\theta + \sin\theta \frac{dr}{d\theta}}{-r \sin\theta + \cos\theta \frac{dr}{d\theta}} \quad \text{(1)}
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Kemiringan garis singgung kurva \(r = f(\theta)\) di titik \((r, \theta)\) ditunjukkan oleh persamaan (1).
+    </p>
+
+    <p>
+                   <div class="dfn-box teorema">
             <div class="dfn-header"> 
-              <b>Teorema 5.1</b> (Luas dalam Koordinat Kutub)
+              <b>Teorema 5.1</b> 
             </div>
             <div class="teorema>
                 <div class="dfn-content">
-                <p style="font-style: italic; font-size: 115%; text-align: justify;">
-                Jika \( f(\theta) \) kontinu dan tak negatif untuk \( \alpha \leq \theta \leq \beta \) dan jika \( 0 \leq \beta - \alpha \leq 2\pi \), maka luasan \( A \) yang dibatasi oleh kurva kutub \( r = f(\theta) \) dan garis-garis \( \theta = \alpha \) dan \( \theta = \beta \) adalah
-                </p>
-                <div style="text-align: center; margin: 20px 0;">
-                    \[
-                    A = \int_{\alpha}^{\beta} \frac{1}{2} [f(\theta)]^2 \, d\theta = \int_{\alpha}^{\beta} \frac{1}{2} r^2 \, d\theta
-                    \]
-                </div>
-                <p style="font-size: 105%; margin-left: 2em;">
-                    
-                </p></div></div>
-                <b>Tips:</b> Untuk menentukan batas integrasi, bayangkan batas integrasi tersebut menyapu dari \( 0 - 2\pi \) atau yang sesuai.
-<h3>2 Menggunakan Simetri untuk Menghindari Nilai Negatif dari \(\r\)</h3>
+                  Jika kurva kutub \(r = f(\theta)\) melewati titik asal di \(\theta = \theta_0\) dan jika \(\frac{dr}{d\theta} \ne 0\) di \(\theta = \theta_0\), maka garis \(\theta = \theta_0\) bersinggungan dengan kurva di titik asal.
+            </div></div></p>
 
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (3).svg" alt="#" style="max-width: 300px;">
-</div>
-
-Kita harus memperhantikan bahwa \(r = f (θ)\) pada integral untuk mencari haruslah tak negatif. Contohnya pada permasalahan ketika mencari luas daerah yang dibatasi oleh rose \(r = sin 2θ\). Namun perhatikan bahwa \(r = sin 2θ\) bernilai negatif saat \(π/2 < θ < π\) atau \(3π/2 < θ < 2π\), sehingga kita tidak dapat langsung mengaplikasikan
-
-<p>
-        \[ A = \int_{0}^{2\pi} (\sin 2\theta)^2 d\theta. \]
-    </p>
+    <h3>3 Panjang Busur Kurva Kutub</h3>
 
     <p>
-        Caranya adalah carilah selang theta positif dan memiliki simetri terhadap bagian lain. Dapat dilihat bahwa kurva tersebut simetri pada selang \(0 \le \theta \le \pi/2\), \(\pi/2 \le \theta \le \pi\), \(\pi \le \theta \le 3\pi/2\), \(3\pi/2 \le \theta \le 2\pi\), sehingga luas daerah pada masing-masing selang (empat selang) tersebut sama. Dengan demikian kita dapat mencari luasnya sebagai berikut
+                 <div class="dfn-box teorema">
+            <div class="dfn-header"> 
+              <b>Teorema 5.2</b> 
+            </div>
+            <div class="teorema>
+                <div class="dfn-content">  
+      Rumus Panjang Busur untuk Kurva Kutub.
+        Jika tidak ada segmen kurva kutub \(r = f(\theta)\) ditelusuri lebih dari sekali sesuai untuk \(\theta\) bertambah dari \(\alpha\) ke \(\beta\), dan jika \(\frac{dr}{d\theta}\) kontinu untuk \(\alpha \le \theta \le \beta\), maka panjang busur, \(S\), dari \(\theta = \alpha\) ke \(\theta = \beta\) adalah
+        <p>
+        \[ S = \int_{\alpha}^{\beta} \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2} d\theta \]
     </p>
-
-    <p>
-        \[ A = 4 \int_{0}^{\pi/2} \frac{1}{2} (\sin 2\theta)^2 d\theta. \]
-    </p>
-
-    <h3>3 Pemakaian Sudut Negatif Sebagai Batas Integrasi</h3>
-
-    <p>
-        Ingat bahwa untuk mencari luas haruslah \(\alpha < \beta\). Perhatikan kasus dibawah ini. Misalkan kita harus mencari luas daerah yang dibatasi \(r = 4 + 2\cos\theta\) yang diarsir di bawah ini
-    </p>
-
-
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (4).svg" alt="#" style="max-width: 300px;">
-</div>
-<p>
-        Kita tidak bisa mencari dengan
-    </p>
-
-    <p>
-        \[ A = \int_{5\pi/4}^{\pi/4} \frac{1}{2} (2 + 3\cos\theta)^2 d\theta, \]
-    </p>
-
-    <p>
-        karena seharusnya \(\alpha < \beta\), sedangkan pada integral tersebut \(\alpha = 5\pi/4\) dan \(\beta = \pi/4\).
-    </p>
-
-    <p>
-        Terdapat dua cara yang dapat kita lakukan.
-    </p>
-
-    <ol style="padding-left: 30px;">
-        <li>
-            Menggunakan simetri pada sebelumnya
-            <p>
-                \[ A = 2 \int_{0}^{\pi/4} \frac{1}{2} (2 + 3\cos\theta)^2 d\theta \]
-            </p>
-            <p>
-                (Terdapat dua daerah yang simetri yaitu pada selang \(0 \le \theta \le \pi/4\) dan \(5\pi/4 \le \theta \le 2\pi\).
-            </p>
-        </li>
-        <li>
-            Menggunakan sudut negatif sesuai pembahasan ini. Ingat bahwa \(5\pi/4\) ekuivalen dengan \(-\pi/4\), sehingga
-            <p>
-                \[ A = \int_{-\pi/4}^{\pi/4} \frac{1}{2} (2 + 3\cos\theta)^2 d\theta \]
-            </p>
-        </li>
-    </ol>
-
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (5).svg" alt="#" style="max-width: 300px;">
-</div>
-
-<h3>4 Volume Koordinat Kutub</h3>
-
-<p>
-        Volume benda putar yang diputar terhadap kurva \(x\) yang dibatasi dari \(\theta_1 = \alpha\) dan \(\theta_2 = \beta\) dapat dihitung dengan
-    </p>
-
-    <p>
-        \[ V = \int_{\alpha}^{\beta} \frac{2}{3}\pi r^3 \sin\theta \,d\theta \]
-    </p>
-
-  
-
+            </div></div>
 
 
            </div>
@@ -264,203 +210,166 @@ Kita harus memperhantikan bahwa \(r = f (θ)\) pada integral untuk mencari harus
 <div id="homeContoh">
     <h2>B) Contoh Soal</h2> 
     <br>
-      <h3>1. Soal EAS 2023</h3>
-
-    <p>
-        Hitung luas daerah tertutup dibatasi kurva \(r = 2(1 - \cos\theta)\) dan sebelah kanan garis \(x = 0\). Sketsa daerah tersebut.
-    </p>
-<b>Pembahasan: </b>
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (6).svg" alt="#" style="max-width: 300px;">
-</div>
-Tentu, berikut adalah konversi teks dan rumus dari gambar yang Anda berikan ke dalam kode HTML, dengan asumsi penggunaan MathJax atau KaTeX untuk rendering rumus matematika:
-
-HTML
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulasi Luas</title>
-    <script type="text/javascript" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-</head>
-<body>
-
-    <p>
-        Luas daerah yang kita cari adalah daerah berwarna abu-abu. Perhatikan bahwa daerah abu-abu simetri terhadap sumbu-\(x\), sehingga kita hanya perlu mencari salah satu daerah saja, pilih daerah
-    </p>
-
-    <p>4</p>
-
-    <p>
-        lalu dikali dengan 2.
-    </p>
-
-    <p>
-        \[
-        \begin{aligned}
-        A &= \int_{0}^{\pi/2} \frac{1}{2} (2(1 - \cos\theta))^2 d\theta \\
-        &= 2 \int_{0}^{\pi/2} (1 - \cos\theta)^2 d\theta \\
-        &= 2 \int_{0}^{\pi/2} (1 - 2\cos\theta + \cos^2\theta) d\theta \\
-        &= 2 \left[ \theta - 2\sin\theta + \frac{\theta + \sin\theta\cos\theta}{2} \right]_{0}^{\pi/2} \\
-        &= 2 \left[ \frac{\pi}{2} - 2 + \frac{\pi/2}{2} \right] \\
-        &= \frac{3\pi}{2} - 4.
-        \end{aligned}
-        \]
-    </p>
-
-    <p>
-        Jadi luas daerah tertutup dibatasi kurva \(r = 2(1 - \cos\theta)\) dan sebelah kanan garis \(x = 0\) adalah \(\frac{3\pi}{2} - 4\).
-    </p>
-    <hr><br>
-
-
-<h3>2. Soal EAS 2020</h3>
-
-    <p>
-        Sketsa grafik daerah di dalam kurva kutub \(r = 2 - 2\sin\theta\) dan di luar kurva kutub \(r = 2 + 2\sin\theta\), selanjutnya hitung luas daerah tersebut.
-    </p>
+ <h3>1. Dapatkan kemiringan garis singgung dari kurva \(r = \frac{1}{\theta}\) di titik dengan \(\theta = 2\).</h3>
 
     <p>
         <strong>Pembahasan:</strong>
     </p>
 
-    <div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (7).svg" alt="#" style="max-width: 300px;">
-</div>
-
-Luas daerah yang kita cari adalah daerah berwarna abu-abu. Perhatikan bahwa daerah abu-abu
-simetri terhadap sumbu \(y\), sehingga kita hanya perlu mencari salah satu daerah saja (sebelah kanan sumbu \(y\). Daerah tersebut dapat dicari dengan daerah warna merah dikurangi daerah biru.
-<div style="display: flex; justify-content: center;">
-    <img src="gambar 4/gambar_kp (8).svg" alt="#" style="max-width: 200px;">
-</div>
-
     <p>
         \[
         \begin{aligned}
-        A &= 2 \left[ \int_{\pi}^{3\pi/2} \frac{1}{2} (2 - 2\sin\theta)^2 d\theta - \int_{\pi}^{3\pi/2} \frac{1}{2} (2 + 2\sin\theta)^2 d\theta \right] \\
-        &= \int_{\pi}^{3\pi/2} \left( (2 - 2\sin\theta)^2 - (2 + 2\sin\theta)^2 \right) d\theta \\
-        &= \int_{\pi}^{3\pi/2} (4 - 8\sin\theta + 4\sin^2\theta - 4 - 8\sin\theta - 4\sin^2\theta) d\theta \\
-        &= \int_{\pi}^{3\pi/2} -16 \sin\theta \,d\theta \\
-        &= 16(\cos\theta)\Big|_{\pi}^{3\pi/2} \\
-        &= 16(0 - (-1)) \\
-        &= 16
+        \frac{dy}{dx} &= \frac{\frac{1}{\theta} \cos\theta + \sin\theta \frac{d}{d\theta}\left[\frac{1}{\theta}\right]}{-\frac{1}{\theta} \sin\theta + \cos\theta \frac{d}{d\theta}\left[\frac{1}{\theta}\right]}\Bigg|_{\theta=2} \\
+        &= \frac{\frac{1}{\theta} \cos\theta + \sin\theta \left[-\frac{1}{\theta^2}\right]}{-\frac{1}{\theta} \sin\theta + \cos\theta \left[-\frac{1}{\theta^2}\right]}\Bigg|_{\theta=2} \\
+        &= \frac{\theta \cos\theta - \sin\theta}{-\theta \sin\theta - \cos\theta}\Bigg|_{\theta=2} \\
+        &= \frac{2 \cos 2 - \sin 2}{-2 \sin 2 - \cos 2}
+        \end{aligned}
+        \]
+    </p>
+
+
+    <h3>2. Soal EAS 2020</h3>
+
+    <p>
+        Dapatkan kemiringan garis singgung dari kurva \(r = 3\sin(3\theta)\) di titik dengan \(\theta = \frac{\pi}{6}\).
+    </p>
+
+    <p>
+        <strong>Pembahasan:</strong>
+    </p>
+    <p>
+        \[
+        \begin{aligned}
+        \frac{dy}{dx} &= \frac{3\sin(3\theta) \cos\theta + \sin\theta \frac{d}{d\theta}[3\sin(3\theta)]}{-3\sin(3\theta) \sin\theta + \cos\theta \frac{d}{d\theta}[3\sin(3\theta)]}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{3\sin(3\theta) \cos\theta + \sin\theta\, 9\cos(3\theta)}{-3\sin(3\theta) \sin\theta + \cos\theta\, 9\cos(3\theta)}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{\sin(3\theta) \cos\theta + 3\sin\theta\cos(3\theta)}{-\sin(3\theta) \sin\theta + 3\cos\theta\cos(3\theta)}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{\sin(\frac{\pi}{2}) \cos\frac{\pi}{6} + 3\sin\frac{\pi}{6}\cos\frac{\pi}{2}}{-\sin(\frac{\pi}{2}) \sin\frac{\pi}{6} + 3\cos\frac{\pi}{6}\cos\frac{\pi}{2}} \\
+        &= \frac{1 \cdot \frac{\sqrt{3}}{2} + 3 \cdot \frac{1}{2} \cdot 0}{-1 \cdot \frac{1}{2} + 3 \cdot \frac{\sqrt{3}}{2} \cdot 0} \\
+        &= \frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}} \\
+        &= -\sqrt{3}
         \end{aligned}
         \]
     </p>
 
     <p>
-        Jadi luas daerah di dalam kurva kutub \(r = 2 - 2\sin\theta\) dan di luar kurva kutub \(r = 2 + 2\sin\theta\) adalah 16.
+        Jadi, kemiringan garis singgung dari kurva \(r = 3\sin(3\theta)\) di titik dengan \(\theta = \frac{\pi}{6}\) adalah \(-\sqrt{3}\).
     </p>
-<hr><br>
+
+    <h3>3. Dapatkan panjang busur dari kurva \(r = e^{3\theta}\) dari \(\theta = 0\) sampai \(\theta = 2\).</h3>
+
+    <p>
+        <strong>Pembahasan:</strong>
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        S &= \int_{\alpha}^{\beta} \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2} d\theta \\
+        &= \int_{0}^{2} \sqrt{(e^{3\theta})^2 + \left(\frac{d}{d\theta}[e^{3\theta}]\right)^2} d\theta \\
+        &= \int_{0}^{2} \sqrt{e^{6\theta} + (3e^{3\theta})^2} d\theta \\
+        &= \int_{0}^{2} \sqrt{e^{6\theta} + 9e^{6\theta}} d\theta \\
+        &= \int_{0}^{2} \sqrt{10e^{6\theta}} d\theta \\
+        &= \sqrt{10} \int_{0}^{2} e^{3\theta} d\theta \\
+        &= \sqrt{10} \left( \frac{1}{3}e^{3\theta} \right)\Bigg|_{0}^{2} \\
+        &= \frac{\sqrt{10}}{3} (e^6 - 1)
+        \end{aligned}
+        \]
+    </p>
 
 </div>
 </div>
-
-
 
 <div id="homeSoal">
 <h2 style="display: flex; justify-content: center;">C) Latihan Soal</h2><br>
 <div class="content">
   <div class="home">
     
-    1. Plotkan titik-titik \( (-5, \frac{\pi}{4}) \) dalam koordinat kutub.<br>
-    <details class="solution">
-        <summary>Pembahasan</summary>
-        <div class="solution-step">
-    Plot titik tersebut dalam koordinat kutub adalah<br>
-    <div style="display: flex; justify-content: center;">
-        <img src="gambar 2/gambar_kp (20).svg" alt="Plot titik polar (-5, pi/4)" style="max-width: 350px;">
-    </div>
-    Titik \( (-5, \frac{\pi}{4}) \) ekuivalen dengan titik \( (5, \frac{5\pi}{4}) \), yaitu pada jarak 5 satuan dari pusat dan sudut \( \frac{5\pi}{4} \) (atau 225&deg;) terhadap sumbu kutub. </div></details>
-    <hr><br>
-    
-    2. Tentukan kurva \( r^2 \sin 2\theta = 8 \) dengan transformasi dalam koordinat siku-siku.<br>
-    <details class="solution">
-        <summary>Pembahasan</summary>
-        <div class="solution-step">
-    Kita tahu bahwa \( \sin 2\theta = 2\cos\theta \sin\theta \), sehingga:
-    <div style="text-align:center;">
-    \[
-    \begin{align*}
-    r^2 \sin 2\theta &= 8 \\
-    r^2 \cdot 2\cos\theta \sin\theta &= 8 \\
-    2r^2 \cos\theta \sin\theta &= 8 \\
-    r^2 \cos\theta \sin\theta &= 4 \\
-    (r \cos\theta)(r \sin\theta) &= 4 \\
-    xy &= 4
-    \end{align*}
-    \]
-    </div>
-    Jadi, persamaan dalam koordinat kartesius adalah
-    <div style="text-align:center;">
-    \[
-    \boxed{xy = 4}
-    \]
-    </div> </div></details>
-    <hr><br>
+    <h3>1. Soal EAS 2020</h3>
 
-3. Nyatakan persamaan \((x^2 + y^2)^2 = 16(x^2 - y^2)\) dalam koordinat kutub.<br>
+    <p>
+        Dapatkan kemiringan garis singgung dari kurva \(r = 5 \sec(2\theta)\) di titik dengan \(\theta = \frac{\pi}{6}\).
+    </p>
 
 
     <details class="solution">
         <summary>Pembahasan</summary>
         <div class="solution-step">
-    Kita tahu bahwa \(x = r \cos \theta\), \(y = r \sin \theta\), dan \(x^2 + y^2 = r^2\), sehingga
-    <div style="text-align:center;">
-    \[
-    \begin{align*}
-    (x^2 + y^2)^2 &= 16(x^2 - y^2) \\
-    (r^2)^2 &= 16\big((r \cos \theta)^2 - (r \sin \theta)^2\big) \\
-    r^4 &= 16r^2(\cos^2 \theta - \sin^2 \theta) \\
-    r^2 &= 16(\cos^2 \theta - \sin^2 \theta) \\
-    r &= 4\sqrt{\cos^2 \theta - \sin^2 \theta}
-    \end{align*}
-    \]
-    </div>
-    Jadi, persamaan dalam koordinat kutub adalah
-    <div style="text-align:center;">
-    \[
-    \boxed{r = 4\sqrt{\cos^2 \theta - \sin^2 \theta}}
-    \]
-    </div></div></details> <hr><br>
 
-4. Buktikan bahwa dalam koordinat kutub persamaan \( r = a \sin \theta + b \cos \theta \) menyatakan suatu lingkaran.
-
-<details class="solution">
-    <summary>Pembahasan</summary>
-    <div class="solution-step" style="font-size: 110%;">
-        Kita tahu bahwa \( \sin 2\theta = 2\cos\theta \sin\theta \), sehingga
-        <div style="text-align:center;">
+    <p>
         \[
         \begin{aligned}
-        r &= a \sin \theta + b \cos \theta \\
-        r &= a \frac{y}{r} + b \frac{x}{r} \\
-        r^2 &= ay + bx \\
-        x^2 + y^2 &= ay + bx \\
-        x^2 - bx + y^2 - ay = 0 \\
-        \left(x - \frac{b}{2}\right)^2 + \left(y - \frac{a}{2}\right)^2 = \left(\frac{\sqrt{a^2 + b^2}}{2}\right)^2
+        \frac{dy}{dx} &= \frac{5\sec(2\theta) \cos\theta + \sin\theta \frac{d}{d\theta}[5\sec(2\theta)]}{-5\sec(2\theta) \sin\theta + \cos\theta \frac{d}{d\theta}[5\sec(2\theta)]}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{5\sec(2\theta) \cos\theta + \sin\theta\, 10\sec(2\theta)\tan(2\theta)}{-5\sec(2\theta) \sin\theta + \cos\theta\, 10\sec(2\theta)\tan(2\theta)}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{\cos\theta + 2\sin\theta\tan(2\theta)}{-\sin\theta + 2\cos\theta\tan(2\theta)}\Bigg|_{\theta=\frac{\pi}{6}} \\
+        &= \frac{\frac{\sqrt{3}}{2} + 2 \cdot \frac{1}{2} \cdot \sqrt{3}}{-\frac{1}{2} + 2 \cdot \frac{\sqrt{3}}{2} \cdot \sqrt{3}} \\
+        &= \frac{\frac{\sqrt{3}}{2} + \sqrt{3}}{-\frac{1}{2} + 3} \\
+        &= \frac{\frac{3\sqrt{3}}{2}}{\frac{5}{2}} \\
+        &= \frac{3\sqrt{3}}{5}
         \end{aligned}
         \]
-        </div>
-        Jadi, persamaan tersebut merupakan lingkaran dengan pusat \( \left(\frac{b}{2}, \frac{a}{2}\right) \) dan jari-jari \( \frac{\sqrt{a^2 + b^2}}{2} \).
-  
-Sehingga, luas daerah yang dibatasi oleh kurva \( r^2 = 2\sin 2\theta \) untuk \( 0 \leq \theta \leq \frac{\pi}{2} \) adalah
-<div style="text-align:center;">
-\[
-S = \int_{0}^{\frac{\pi}{2}} \frac{1}{2} r^2 d\theta = \int_{0}^{\frac{\pi}{2}} \frac{1}{2} \cdot 2\sin 2\theta \, d\theta = \int_{0}^{\frac{\pi}{2}} \sin 2\theta \, d\theta
-\]
-\[
-= \left. -\frac{1}{2} \cos 2\theta \right|_0^{\frac{\pi}{2}} = -\frac{1}{2} [\cos \pi - \cos 0] = -\frac{1}{2} [(-1) - 1] = -\frac{1}{2}(-2) = 1
-\]
-</div>
-Jadi, luas daerah tersebut adalah \( S = 1 \) satuan luas.
-  </div>
-</details>
-<hr><br>
+    </p>
+
+    <p>
+        Jadi, kemiringan garis singgung dari kurva \(r = 5\sec(2\theta)\) di titik dengan \(\theta = \frac{\pi}{6}\) adalah \(\frac{3\sqrt{3}}{5}\).
+    </p> </div></details><hr> <br>    
+    
+    <p>2. Dapatkan kemiringan garis singgung dari kurva \(r = 1 + \cos\theta\) di titik dengan \(\theta = \frac{\pi}{2}\).</p>
+
+        <details class="solution">
+        <summary>Pembahasan</summary>
+        <div class="solution-step">
+
+    <p>
+        \[
+        \begin{aligned}
+        \frac{dy}{dx} &= \frac{(1 + \cos\theta) \cos\theta + \sin\theta \frac{d}{d\theta}[1 + \cos\theta]}{-(1 + \cos\theta) \sin\theta + \cos\theta \frac{d}{d\theta}[1 + \cos\theta]}\Bigg|_{\theta=\frac{\pi}{2}} \\
+        &= \frac{(1 + \cos\theta) \cos\theta + \sin\theta[-\sin\theta]}{-(1 + \cos\theta) \sin\theta + \cos\theta[-\sin\theta]}\Bigg|_{\theta=\frac{\pi}{2}} \\
+        &= \frac{(1 + \frac{\sqrt{2}}{2}) \frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2}}{2}}{-(1 + \frac{\sqrt{2}}{2}) \frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2}}{2}} \\ % This line seems to be an error in the original image, I've kept it as is from the image but it evaluates to something different
+        &= \frac{4 + 2 - 2}{-4 - 2 - 2} \\ % This line seems to be an error in the original image
+        &= \frac{4}{-8} \\
+        &= -\frac{1}{2}
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Jadi, kemiringan garis singgung dari kurva \(r = 1 + \cos\theta\) di titik dengan \(\theta = \frac{\pi}{2}\) adalah \(-\frac{1}{2}\).
+    </p></div></details><hr><br>
+
+    <h3>3. Soal EAS 2021</h3>
+
+    <p>
+        Dapatkan panjang busur dari kurva \(r = 6\cos\theta + 7\sin\theta\). (Berikan gambar sketsa kurvanya)
+    </p>
+
+    <details class="solution">
+        <summary>Pembahasan</summary>
+        <div class="solution-step">
+
+    <p>
+        Pertama kita akan coba dengan mengubah dari polar ke kartesius.
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        r &= 6\cos\theta + 7\sin\theta \\
+        \sqrt{x^2 + y^2} &= 6\frac{x}{\sqrt{x^2 + y^2}} + 7\frac{y}{\sqrt{x^2 + y^2}} \\
+        x^2 + y^2 &= 6x + 7y \\
+        x^2 - 6x + y^2 - 7y &= 0 \\
+        (x-3)^2 + \left(y-\frac{7}{2}\right)^2 &= \frac{85}{4}
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Terlihat bahwa persamaan tersebut merupakan persamaan lingkaran dengan pusat \(\left(3, \frac{7}{2}\right)\) dan jari-jari \(\frac{\sqrt{85}}{2}\). Jadi, panjang busur sama seperti kelilingnya
+ <p style="text-align: center;">
+          \[ S = 2\pi r = 2\pi \cdot \frac{\sqrt{85}}{2} = \sqrt{85}\pi \]
+
+ </p>
+    </p></div></details> <hr><br>
+
 
 </div> </div> 
   

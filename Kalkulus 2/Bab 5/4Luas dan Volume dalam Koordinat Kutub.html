@@ -151,7 +151,7 @@
       <h2 style="display: flex; justify-content: left; font-family:Arial;">5.4 Luas dan Volume dalam Koordinat Kutub</h2> <br>
 
       
-    <div id="home">
+<div id="home">
       <h2 style="text-align: center;">A) Rangkuman Materi</h2> <br>
 
       <h3 style="text-align: left;">1 Masalah Luasan dalam Koordinat Kutub</h3>
@@ -259,7 +259,7 @@ Kita harus memperhantikan bahwa \(r = f (θ)\) pada integral untuk mencari harus
 
 
 
-           </div>
+   </div>
 
 <div id="homeContoh">
     <h2>B) Contoh Soal</h2> 
@@ -358,9 +358,169 @@ simetri terhadap sumbu \(y\), sehingga kita hanya perlu mencari salah satu daera
 <hr><br>
 
 </div>
+
+<div id="homeSoal">
+<h2 style="display: flex; justify-content: center;">C) Latihan Soal</h2><br>
+<div class="content">
+  <div class="home">
+    
+   
+    <h3>1. Soal EAS 2024</h3>
+
+    <p>
+        Dapatkan luas daerah dari irisan kardioda \(r = 2 - 2\cos\theta\) dan kardioda \(r = 2 + 2\cos\theta\).
+    </p>
+       <details class="solution">
+        <summary>Pembahasan</summary>
+        <div class="solution-step">
+    <div style="display: flex; justify-content: center;">
+    <img src="gambar 4 kedua/gambar_kp (2).svg" alt="#" style="max-width: 400px;">
+</div>
+    Perhatikan bahwa untuk mencari daerah irisan tersebut dapat diperoleh melalui 
+<div style="display: flex; justify-content: center;">
+  <img src="gambar 4 kedua/gambar_kp (3).svg" alt="#" style="max-width: 400px;">
+</div>
+<p>
+        Namun karena daerah I, II, III, IV simetri, kita cukup mencari luas satu daerah lalu kita kalikan dengan 4. Misalkan kita mencari luas daerah I, yaitu daerah yang dibatasi \(r = 2 - 2\cos\theta\) dengan
+    </p>
+
+    <p>1</p>
+
+    <p>
+        \(0 \le \theta \le \pi/2\). (Pada bagian ini tidak dibahas cara mengintegralkan secara detail. Jika ingin mempelajari integral secara detail, silakan ke bab 2 dan 3)
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        A &= 4 \int_{0}^{\pi/2} \frac{1}{2} (2 - 2\cos\theta)^2 d\theta \\
+        &= 2 \int_{0}^{\pi/2} (4 - 8\cos\theta + 4\cos^2\theta) d\theta \\
+        &= 8 \int_{0}^{\pi/2} (1 - 2\cos\theta + \cos^2\theta) d\theta \\
+        &= 8 \left[ \theta - 2\sin\theta + \frac{\cos\theta\sin\theta + \theta}{2} \right]_{0}^{\pi/2} \\
+        &= 8 \left[ \frac{3}{2}\theta - 2\sin\theta + \frac{\cos\theta\sin\theta}{2} \right]_{0}^{\pi/2} \\
+        &= 8 \left[ \frac{3\pi}{4} - 2 \right] \\
+        &= 6\pi - 16
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Jadi, luas daerah dari irisan kardioda \(r = 2 - 2\cos\theta\) dan kardioda \(r = 2 + 2\cos\theta\) adalah \(6\pi - 16\).
+    </p>
+
+</div> </details><hr><br>
+
+<h3>2. Soal EAS 2024</h3>
+  Dapatkan luas daerah yang berada di dalam lingkaran \(r = 3 sin θ\) dan di lingkaran \(r = 1 + sin θ.\)
+
+         <details class="solution">
+        <summary>Pembahasan</summary>
+        <div class="solution-step">
+<div style="display: flex; justify-content: center;">
+  <img src="gambar 4 kedua/gambar_kp (4).svg" alt="#" style="max-width: 250px;">
+</div>
+    <p>
+        Luas daerah yang kita cari adalah daerah berwarna abu-abu. Perhatikan bahwa daerah abu-abu simetri terhadap sumbu-\(y\), sehingga kita hanya perlu mencari salah satu daerah saja. Pertama, kita akan mencari sudut irisan dari lingkaran merah dan biru
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        3\sin\theta &= 1 + \sin\theta \\
+        2\sin\theta &= 1 \\
+        \sin\theta &= \frac{1}{2}
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Karena terletak pada kuadran pertama, maka \(\theta\) yang memenuhi adalah \(\pi/6\). Perhatikan gambar berikut, untuk mencari luas daerah abu, dapat diperoleh dengan mencari luas daerah merah
+    </p>
+
+    <p>2</p>
+
+    <p>
+        dikurangi daerah biru.
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        A &= 2 \left[ \int_{\pi/6}^{\pi/2} \frac{1}{2} (3\sin\theta)^2 d\theta - \int_{\pi/6}^{\pi/2} \frac{1}{2} (1 + \sin\theta)^2 d\theta \right] \\
+        &= \int_{\pi/6}^{\pi/2} \left( (9\sin^2\theta - 1 - 2\sin\theta - \sin^2\theta) \right) d\theta \\
+        &= \int_{\pi/6}^{\pi/2} (8\sin^2\theta - 2\sin\theta - 1) d\theta \\
+        &= \left[ \frac{9}{2}\theta - \sin\theta\cos\theta - \theta + 2\cos\theta \right]_{\pi/6}^{\pi/2} \\
+        &= \frac{9}{2}\left(\frac{\pi}{2}\right) - \frac{\pi}{2} - \frac{9}{2}\left(\frac{\pi}{6}\right) - \frac{\sqrt{3}}{4} + \frac{\pi}{6} - \sqrt{3} \\ % corrected the line based on likely intent
+        &= \frac{7\pi}{8} + \frac{\sqrt{3}}{8}
+        \end{aligned}
+        \]
+
+            <p>
+        Jadi luas daerah yang berada di dalam lingkaran \(r = 3\sin\theta\) dan di lingkaran \(r = 1 + \sin\theta\) adalah \(\frac{7\pi}{6} + \frac{\sqrt{3}}{8}\).
+    </p>
+    </p></div></details> <hr><br>
+    <h3>3. Soal EAS 2024</h3>
+
+    <p>
+        Dapatkan luas daerah yang berada di dalam lingkaran \(r = 4\sin\theta\) dan di luar lingkaran \(r = 4\cos\theta\).
+    </p>
+         <details class="solution">
+        <summary>Pembahasan</summary>
+        <div class="solution-step">
+          <div style="display: flex; justify-content: center;">
+  <img src="gambar 4 kedua/gambar_kp (5).svg" alt="#" style="max-width: 300px;">
+</div>
+    <p>
+        Luas daerah yang kita cari adalah daerah berwarna abu-abu. Pertama, kita akan mencari sudut irisan dari lingkaran merah dan biru
+    </p>
+
+    <p>
+        \[
+        \begin{aligned}
+        4 \sin\theta &= 4 \cos\theta \\
+        \frac{\sin\theta}{\cos\theta} &= 1 \\
+        \tan\theta &= 1
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Karena terletak pada kuadran pertama, maka \(\theta\) yang memenuhi adalah \(\pi/4\). Perhatikan gambar berikut, untuk mencari luas daerah abu, dapat diperoleh dengan mencari luas daerah merah dikurangi daerah biru.
+    </p>
+             <div style="display: flex; justify-content: center;">
+  <img src="gambar 4 kedua/gambar_kp (6).svg" alt="#" style="max-width: 500px;">
 </div>
 
+    <p>
+        Selanjutnya, ingat bahwa batas integrasi untuk mencari luas kurva \(r = 4\sin\theta\) cukup \(0 \le \theta \le \pi\).
+    </p>
 
+    <p>
+        \[
+        \begin{aligned}
+        A &= A_1 - A_2 \\
+        &= \int_{\pi/4}^{\pi} \frac{1}{2} (4\sin\theta)^2 d\theta - \int_{\pi/4}^{\pi/2} \frac{1}{2} (4\cos\theta)^2 d\theta \\
+        &= 8 \left[ \frac{\theta - \sin\theta\cos\theta}{2} \right]_{\pi/4}^{\pi} - 8 \left[ \frac{\theta + \sin\theta\cos\theta}{2} \right]_{\pi/4}^{\pi/2} \\
+        &= 8 \left[ \frac{\pi - 0}{2} - \frac{\pi/4 - 1/2}{2} \right] - 8 \left[ \frac{\pi/2 + 0}{2} - \frac{\pi/4 + 1/2}{2} \right] \\
+        &= 8 \left[ \frac{\pi}{2} - \frac{\pi}{8} + \frac{1}{4} \right] - 8 \left[ \frac{\pi}{4} - \frac{\pi}{8} - \frac{1}{4} \right] \\
+        % Corrected line based on the image's mathematical progression
+        &= 4 \left[ \pi - \frac{\pi}{4} + \frac{1}{2} \right] - 4 \left[ \frac{\pi}{2} - \frac{\pi}{4} - \frac{1}{2} \right] \\ % Adjusted coefficients based on common factor of 2
+        &= 4 \left[ \frac{3\pi}{4} + \frac{1}{2} \right] - 4 \left[ \frac{\pi}{4} - \frac{1}{2} \right] \\
+        &= 3\pi + 2 - \pi + 2 \\
+        &= 2\pi + 4
+        \end{aligned}
+        \]
+    </p>
+
+    <p>
+        Jadi luas daerah yang berada di dalam lingkaran \(r = 4\sin\theta\) dan di luar lingkaran \(r = 4\cos\theta\) adalah \(2\pi + 4\).
+    </p>
+        </div></details> <hr><br>
+
+        
+
+
+</div></div></div>
 
     
     <p id="AnakKP">&copy; Copyright 2025 | KP Mahasiswa Matematika 2022</p>
